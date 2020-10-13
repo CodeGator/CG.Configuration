@@ -1,0 +1,531 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: CG.Configuration
+  name: CG.Configuration
+  href: api/CG.Configuration.html
+  commentId: N:CG.Configuration
+  fullName: CG.Configuration
+  nameWithType: CG.Configuration
+- uid: CG.Configuration.ConfigurationExtensions
+  name: ConfigurationExtensions
+  href: api/CG.Configuration.ConfigurationExtensions.html
+  commentId: T:CG.Configuration.ConfigurationExtensions
+  fullName: CG.Configuration.ConfigurationExtensions
+  nameWithType: ConfigurationExtensions
+- uid: CG.Configuration.ConfigurationExtensions.GetAs*
+  name: GetAs
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAs_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAs
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAs
+  nameWithType: ConfigurationExtensions.GetAs
+- uid: CG.Configuration.ConfigurationExtensions.GetAs``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,``0)
+  name: GetAs<T>(IConfiguration, String, T)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAs__1_Microsoft_Extensions_Configuration_IConfiguration_System_String___0_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAs``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,``0)
+  name.vb: GetAs(Of T)(IConfiguration, String, T)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAs<T>(Microsoft.Extensions.Configuration.IConfiguration, System.String, T)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.GetAs(Of T)(Microsoft.Extensions.Configuration.IConfiguration, System.String, T)
+  nameWithType: ConfigurationExtensions.GetAs<T>(IConfiguration, String, T)
+  nameWithType.vb: ConfigurationExtensions.GetAs(Of T)(IConfiguration, String, T)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Boolean)
+  name: GetAsBoolean(IConfiguration, String, Boolean)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsBoolean_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Boolean_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Boolean)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.Boolean)
+  nameWithType: ConfigurationExtensions.GetAsBoolean(IConfiguration, String, Boolean)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsBoolean*
+  name: GetAsBoolean
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsBoolean_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsBoolean
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsBoolean
+  nameWithType: ConfigurationExtensions.GetAsBoolean
+- uid: CG.Configuration.ConfigurationExtensions.GetAsByte(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Byte)
+  name: GetAsByte(IConfiguration, String, Byte)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsByte_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Byte_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsByte(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Byte)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsByte(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.Byte)
+  nameWithType: ConfigurationExtensions.GetAsByte(IConfiguration, String, Byte)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsByte*
+  name: GetAsByte
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsByte_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsByte
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsByte
+  nameWithType: ConfigurationExtensions.GetAsByte
+- uid: CG.Configuration.ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTime)
+  name: GetAsDateTime(IConfiguration, String, DateTime)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsDateTime_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTime_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTime)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.DateTime)
+  nameWithType: ConfigurationExtensions.GetAsDateTime(IConfiguration, String, DateTime)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsDateTime*
+  name: GetAsDateTime
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsDateTime_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsDateTime
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsDateTime
+  nameWithType: ConfigurationExtensions.GetAsDateTime
+- uid: CG.Configuration.ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTimeOffset)
+  name: GetAsDateTimeOffset(IConfiguration, String, DateTimeOffset)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsDateTimeOffset_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTimeOffset_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTimeOffset)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.DateTimeOffset)
+  nameWithType: ConfigurationExtensions.GetAsDateTimeOffset(IConfiguration, String, DateTimeOffset)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsDateTimeOffset*
+  name: GetAsDateTimeOffset
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsDateTimeOffset_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsDateTimeOffset
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsDateTimeOffset
+  nameWithType: ConfigurationExtensions.GetAsDateTimeOffset
+- uid: CG.Configuration.ConfigurationExtensions.GetAsDecimal(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Decimal)
+  name: GetAsDecimal(IConfiguration, String, Decimal)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsDecimal_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Decimal_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsDecimal(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Decimal)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsDecimal(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.Decimal)
+  nameWithType: ConfigurationExtensions.GetAsDecimal(IConfiguration, String, Decimal)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsDecimal*
+  name: GetAsDecimal
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsDecimal_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsDecimal
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsDecimal
+  nameWithType: ConfigurationExtensions.GetAsDecimal
+- uid: CG.Configuration.ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Guid)
+  name: GetAsGuid(IConfiguration, String, Guid)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsGuid_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Guid_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Guid)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.Guid)
+  nameWithType: ConfigurationExtensions.GetAsGuid(IConfiguration, String, Guid)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsGuid*
+  name: GetAsGuid
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsGuid_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsGuid
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsGuid
+  nameWithType: ConfigurationExtensions.GetAsGuid
+- uid: CG.Configuration.ConfigurationExtensions.GetAsInt(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Int32)
+  name: GetAsInt(IConfiguration, String, Int32)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsInt_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Int32_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsInt(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Int32)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsInt(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.Int32)
+  nameWithType: ConfigurationExtensions.GetAsInt(IConfiguration, String, Int32)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsInt*
+  name: GetAsInt
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsInt_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsInt
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsInt
+  nameWithType: ConfigurationExtensions.GetAsInt
+- uid: CG.Configuration.ConfigurationExtensions.GetAsLong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Int64)
+  name: GetAsLong(IConfiguration, String, Int64)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsLong_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Int64_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsLong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Int64)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsLong(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.Int64)
+  nameWithType: ConfigurationExtensions.GetAsLong(IConfiguration, String, Int64)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsLong*
+  name: GetAsLong
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsLong_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsLong
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsLong
+  nameWithType: ConfigurationExtensions.GetAsLong
+- uid: CG.Configuration.ConfigurationExtensions.GetAsSingle(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single)
+  name: GetAsSingle(IConfiguration, String, Single)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsSingle_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Single_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsSingle(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsSingle(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.Single)
+  nameWithType: ConfigurationExtensions.GetAsSingle(IConfiguration, String, Single)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsSingle*
+  name: GetAsSingle
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsSingle_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsSingle
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsSingle
+  nameWithType: ConfigurationExtensions.GetAsSingle
+- uid: CG.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan)
+  name: GetAsTimeSpan(IConfiguration, String, TimeSpan)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_TimeSpan_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.TimeSpan)
+  nameWithType: ConfigurationExtensions.GetAsTimeSpan(IConfiguration, String, TimeSpan)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsTimeSpan*
+  name: GetAsTimeSpan
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsTimeSpan_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsTimeSpan
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsTimeSpan
+  nameWithType: ConfigurationExtensions.GetAsTimeSpan
+- uid: CG.Configuration.ConfigurationExtensions.GetAsUInt(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.UInt32)
+  name: GetAsUInt(IConfiguration, String, UInt32)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsUInt_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_UInt32_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsUInt(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.UInt32)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsUInt(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.UInt32)
+  nameWithType: ConfigurationExtensions.GetAsUInt(IConfiguration, String, UInt32)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsUInt*
+  name: GetAsUInt
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsUInt_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsUInt
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsUInt
+  nameWithType: ConfigurationExtensions.GetAsUInt
+- uid: CG.Configuration.ConfigurationExtensions.GetAsULong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.UInt64)
+  name: GetAsULong(IConfiguration, String, UInt64)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsULong_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_UInt64_
+  commentId: M:CG.Configuration.ConfigurationExtensions.GetAsULong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.UInt64)
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsULong(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.UInt64)
+  nameWithType: ConfigurationExtensions.GetAsULong(IConfiguration, String, UInt64)
+- uid: CG.Configuration.ConfigurationExtensions.GetAsULong*
+  name: GetAsULong
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_GetAsULong_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.GetAsULong
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.GetAsULong
+  nameWithType: ConfigurationExtensions.GetAsULong
+- uid: CG.Configuration.ConfigurationExtensions.SafeCopy*
+  name: SafeCopy
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_SafeCopy_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.SafeCopy
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.SafeCopy
+  nameWithType: ConfigurationExtensions.SafeCopy
+- uid: CG.Configuration.ConfigurationExtensions.SafeCopy``2(Microsoft.Extensions.Configuration.IConfiguration,``0,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Boolean)
+  name: SafeCopy<TObj, TProp>(IConfiguration, TObj, Expression<Func<TObj, TProp>>, String, Boolean)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_SafeCopy__2_Microsoft_Extensions_Configuration_IConfiguration___0_System_Linq_Expressions_Expression_System_Func___0___1___System_String_System_Boolean_
+  commentId: M:CG.Configuration.ConfigurationExtensions.SafeCopy``2(Microsoft.Extensions.Configuration.IConfiguration,``0,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Boolean)
+  name.vb: SafeCopy(Of TObj, TProp)(IConfiguration, TObj, Expression(Of Func(Of TObj, TProp)), String, Boolean)
+  fullName: CG.Configuration.ConfigurationExtensions.SafeCopy<TObj, TProp>(Microsoft.Extensions.Configuration.IConfiguration, TObj, System.Linq.Expressions.Expression<System.Func<TObj, TProp>>, System.String, System.Boolean)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.SafeCopy(Of TObj, TProp)(Microsoft.Extensions.Configuration.IConfiguration, TObj, System.Linq.Expressions.Expression(Of System.Func(Of TObj, TProp)), System.String, System.Boolean)
+  nameWithType: ConfigurationExtensions.SafeCopy<TObj, TProp>(IConfiguration, TObj, Expression<Func<TObj, TProp>>, String, Boolean)
+  nameWithType.vb: ConfigurationExtensions.SafeCopy(Of TObj, TProp)(IConfiguration, TObj, Expression(Of Func(Of TObj, TProp)), String, Boolean)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAs*
+  name: TryGetAs
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAs_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAs
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAs
+  nameWithType: ConfigurationExtensions.TryGetAs
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAs``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,``0@)
+  name: TryGetAs<T>(IConfiguration, String, out T)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAs__1_Microsoft_Extensions_Configuration_IConfiguration_System_String___0__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAs``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,``0@)
+  name.vb: TryGetAs(Of T)(IConfiguration, String, ByRef T)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAs<T>(Microsoft.Extensions.Configuration.IConfiguration, System.String, out T)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAs(Of T)(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef T)
+  nameWithType: ConfigurationExtensions.TryGetAs<T>(IConfiguration, String, out T)
+  nameWithType.vb: ConfigurationExtensions.TryGetAs(Of T)(IConfiguration, String, ByRef T)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Boolean@)
+  name: TryGetAsBoolean(IConfiguration, String, out Boolean)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsBoolean_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Boolean__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Boolean@)
+  name.vb: TryGetAsBoolean(IConfiguration, String, ByRef Boolean)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Boolean)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Boolean)
+  nameWithType: ConfigurationExtensions.TryGetAsBoolean(IConfiguration, String, out Boolean)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsBoolean(IConfiguration, String, ByRef Boolean)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsBoolean*
+  name: TryGetAsBoolean
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsBoolean_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsBoolean
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsBoolean
+  nameWithType: ConfigurationExtensions.TryGetAsBoolean
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsByte(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Byte@)
+  name: TryGetAsByte(IConfiguration, String, out Byte)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsByte_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Byte__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsByte(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Byte@)
+  name.vb: TryGetAsByte(IConfiguration, String, ByRef Byte)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsByte(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Byte)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsByte(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Byte)
+  nameWithType: ConfigurationExtensions.TryGetAsByte(IConfiguration, String, out Byte)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsByte(IConfiguration, String, ByRef Byte)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsByte*
+  name: TryGetAsByte
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsByte_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsByte
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsByte
+  nameWithType: ConfigurationExtensions.TryGetAsByte
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsChar(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Char@)
+  name: TryGetAsChar(IConfiguration, String, out Char)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsChar_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Char__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsChar(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Char@)
+  name.vb: TryGetAsChar(IConfiguration, String, ByRef Char)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsChar(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Char)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsChar(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Char)
+  nameWithType: ConfigurationExtensions.TryGetAsChar(IConfiguration, String, out Char)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsChar(IConfiguration, String, ByRef Char)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsChar*
+  name: TryGetAsChar
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsChar_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsChar
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsChar
+  nameWithType: ConfigurationExtensions.TryGetAsChar
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTime@)
+  name: TryGetAsDateTime(IConfiguration, String, out DateTime)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsDateTime_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTime__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTime@)
+  name.vb: TryGetAsDateTime(IConfiguration, String, ByRef DateTime)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.DateTime)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.DateTime)
+  nameWithType: ConfigurationExtensions.TryGetAsDateTime(IConfiguration, String, out DateTime)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsDateTime(IConfiguration, String, ByRef DateTime)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsDateTime*
+  name: TryGetAsDateTime
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsDateTime_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsDateTime
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsDateTime
+  nameWithType: ConfigurationExtensions.TryGetAsDateTime
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTimeOffset@)
+  name: TryGetAsDateTimeOffset(IConfiguration, String, out DateTimeOffset)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsDateTimeOffset_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTimeOffset__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTimeOffset@)
+  name.vb: TryGetAsDateTimeOffset(IConfiguration, String, ByRef DateTimeOffset)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.DateTimeOffset)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.DateTimeOffset)
+  nameWithType: ConfigurationExtensions.TryGetAsDateTimeOffset(IConfiguration, String, out DateTimeOffset)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsDateTimeOffset(IConfiguration, String, ByRef DateTimeOffset)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset*
+  name: TryGetAsDateTimeOffset
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsDateTimeOffset_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset
+  nameWithType: ConfigurationExtensions.TryGetAsDateTimeOffset
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsDecimal(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Decimal@)
+  name: TryGetAsDecimal(IConfiguration, String, out Decimal)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsDecimal_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Decimal__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsDecimal(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Decimal@)
+  name.vb: TryGetAsDecimal(IConfiguration, String, ByRef Decimal)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsDecimal(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Decimal)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsDecimal(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Decimal)
+  nameWithType: ConfigurationExtensions.TryGetAsDecimal(IConfiguration, String, out Decimal)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsDecimal(IConfiguration, String, ByRef Decimal)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsDecimal*
+  name: TryGetAsDecimal
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsDecimal_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsDecimal
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsDecimal
+  nameWithType: ConfigurationExtensions.TryGetAsDecimal
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsDouble(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Double@)
+  name: TryGetAsDouble(IConfiguration, String, out Double)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsDouble_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Double__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsDouble(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Double@)
+  name.vb: TryGetAsDouble(IConfiguration, String, ByRef Double)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsDouble(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Double)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsDouble(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Double)
+  nameWithType: ConfigurationExtensions.TryGetAsDouble(IConfiguration, String, out Double)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsDouble(IConfiguration, String, ByRef Double)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsDouble*
+  name: TryGetAsDouble
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsDouble_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsDouble
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsDouble
+  nameWithType: ConfigurationExtensions.TryGetAsDouble
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsFloat(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single@)
+  name: TryGetAsFloat(IConfiguration, String, out Single)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsFloat_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Single__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsFloat(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single@)
+  name.vb: TryGetAsFloat(IConfiguration, String, ByRef Single)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsFloat(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Single)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsFloat(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Single)
+  nameWithType: ConfigurationExtensions.TryGetAsFloat(IConfiguration, String, out Single)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsFloat(IConfiguration, String, ByRef Single)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsFloat*
+  name: TryGetAsFloat
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsFloat_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsFloat
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsFloat
+  nameWithType: ConfigurationExtensions.TryGetAsFloat
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Guid@)
+  name: TryGetAsGuid(IConfiguration, String, out Guid)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsGuid_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Guid__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Guid@)
+  name.vb: TryGetAsGuid(IConfiguration, String, ByRef Guid)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Guid)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Guid)
+  nameWithType: ConfigurationExtensions.TryGetAsGuid(IConfiguration, String, out Guid)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsGuid(IConfiguration, String, ByRef Guid)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsGuid*
+  name: TryGetAsGuid
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsGuid_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsGuid
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsGuid
+  nameWithType: ConfigurationExtensions.TryGetAsGuid
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsInt(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Int32@)
+  name: TryGetAsInt(IConfiguration, String, out Int32)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsInt_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Int32__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsInt(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Int32@)
+  name.vb: TryGetAsInt(IConfiguration, String, ByRef Int32)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsInt(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Int32)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsInt(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Int32)
+  nameWithType: ConfigurationExtensions.TryGetAsInt(IConfiguration, String, out Int32)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsInt(IConfiguration, String, ByRef Int32)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsInt*
+  name: TryGetAsInt
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsInt_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsInt
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsInt
+  nameWithType: ConfigurationExtensions.TryGetAsInt
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsList*
+  name: TryGetAsList
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsList_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsList
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsList
+  nameWithType: ConfigurationExtensions.TryGetAsList
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsList``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Collections.Generic.IEnumerable{``0}@)
+  name: TryGetAsList<T>(IConfiguration, String, out IEnumerable<T>)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsList__1_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Collections_Generic_IEnumerable___0___
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsList``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Collections.Generic.IEnumerable{``0}@)
+  name.vb: TryGetAsList(Of T)(IConfiguration, String, ByRef IEnumerable(Of T))
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsList<T>(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsList(Of T)(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: ConfigurationExtensions.TryGetAsList<T>(IConfiguration, String, out IEnumerable<T>)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsList(Of T)(IConfiguration, String, ByRef IEnumerable(Of T))
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsLong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Int64@)
+  name: TryGetAsLong(IConfiguration, String, out Int64)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsLong_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Int64__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsLong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Int64@)
+  name.vb: TryGetAsLong(IConfiguration, String, ByRef Int64)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsLong(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Int64)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsLong(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Int64)
+  nameWithType: ConfigurationExtensions.TryGetAsLong(IConfiguration, String, out Int64)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsLong(IConfiguration, String, ByRef Int64)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsLong*
+  name: TryGetAsLong
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsLong_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsLong
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsLong
+  nameWithType: ConfigurationExtensions.TryGetAsLong
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsSingle(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single@)
+  name: TryGetAsSingle(IConfiguration, String, out Single)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsSingle_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Single__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsSingle(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single@)
+  name.vb: TryGetAsSingle(IConfiguration, String, ByRef Single)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsSingle(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Single)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsSingle(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Single)
+  nameWithType: ConfigurationExtensions.TryGetAsSingle(IConfiguration, String, out Single)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsSingle(IConfiguration, String, ByRef Single)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsSingle*
+  name: TryGetAsSingle
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsSingle_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsSingle
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsSingle
+  nameWithType: ConfigurationExtensions.TryGetAsSingle
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan@)
+  name: TryGetAsTimeSpan(IConfiguration, String, out TimeSpan)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_TimeSpan__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan@)
+  name.vb: TryGetAsTimeSpan(IConfiguration, String, ByRef TimeSpan)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.TimeSpan)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.TimeSpan)
+  nameWithType: ConfigurationExtensions.TryGetAsTimeSpan(IConfiguration, String, out TimeSpan)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsTimeSpan(IConfiguration, String, ByRef TimeSpan)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsTimeSpan*
+  name: TryGetAsTimeSpan
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsTimeSpan_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsTimeSpan
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsTimeSpan
+  nameWithType: ConfigurationExtensions.TryGetAsTimeSpan
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsUInt(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.UInt32@)
+  name: TryGetAsUInt(IConfiguration, String, out UInt32)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsUInt_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_UInt32__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsUInt(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.UInt32@)
+  name.vb: TryGetAsUInt(IConfiguration, String, ByRef UInt32)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsUInt(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.UInt32)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsUInt(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.UInt32)
+  nameWithType: ConfigurationExtensions.TryGetAsUInt(IConfiguration, String, out UInt32)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsUInt(IConfiguration, String, ByRef UInt32)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsUInt*
+  name: TryGetAsUInt
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsUInt_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsUInt
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsUInt
+  nameWithType: ConfigurationExtensions.TryGetAsUInt
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsULong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.UInt64@)
+  name: TryGetAsULong(IConfiguration, String, out UInt64)
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsULong_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_UInt64__
+  commentId: M:CG.Configuration.ConfigurationExtensions.TryGetAsULong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.UInt64@)
+  name.vb: TryGetAsULong(IConfiguration, String, ByRef UInt64)
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsULong(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.UInt64)
+  fullName.vb: CG.Configuration.ConfigurationExtensions.TryGetAsULong(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.UInt64)
+  nameWithType: ConfigurationExtensions.TryGetAsULong(IConfiguration, String, out UInt64)
+  nameWithType.vb: ConfigurationExtensions.TryGetAsULong(IConfiguration, String, ByRef UInt64)
+- uid: CG.Configuration.ConfigurationExtensions.TryGetAsULong*
+  name: TryGetAsULong
+  href: api/CG.Configuration.ConfigurationExtensions.html#CG_Configuration_ConfigurationExtensions_TryGetAsULong_
+  commentId: Overload:CG.Configuration.ConfigurationExtensions.TryGetAsULong
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationExtensions.TryGetAsULong
+  nameWithType: ConfigurationExtensions.TryGetAsULong
+- uid: Microsoft.Extensions.Configuration
+  name: Microsoft.Extensions.Configuration
+  href: api/Microsoft.Extensions.Configuration.html
+  commentId: N:Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+- uid: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions
+  name: ConfigurationBuilderExtensions
+  href: api/Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.html
+  commentId: T:Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions
+  fullName: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions
+  nameWithType: ConfigurationBuilderExtensions
+- uid: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Boolean,System.Boolean)
+  name: AddAppConfigSource(IConfigurationBuilder, Boolean, Boolean)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.html#Microsoft_Extensions_Configuration_ConfigurationBuilderExtensions_AddAppConfigSource_Microsoft_Extensions_Configuration_IConfigurationBuilder_System_Boolean_System_Boolean_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Boolean,System.Boolean)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource(Microsoft.Extensions.Configuration.IConfigurationBuilder, System.Boolean, System.Boolean)
+  nameWithType: ConfigurationBuilderExtensions.AddAppConfigSource(IConfigurationBuilder, Boolean, Boolean)
+- uid: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource*
+  name: AddAppConfigSource
+  href: api/Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.html#Microsoft_Extensions_Configuration_ConfigurationBuilderExtensions_AddAppConfigSource_
+  commentId: Overload:Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource
+  nameWithType: ConfigurationBuilderExtensions.AddAppConfigSource
+- uid: Microsoft.Extensions.Configuration.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Microsoft.Extensions.Configuration.ServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.Configuration.ServiceCollectionExtensions
+  fullName: Microsoft.Extensions.Configuration.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Microsoft.Extensions.Configuration.ServiceCollectionExtensions.TryConfigure*
+  name: TryConfigure
+  href: api/Microsoft.Extensions.Configuration.ServiceCollectionExtensions.html#Microsoft_Extensions_Configuration_ServiceCollectionExtensions_TryConfigure_
+  commentId: Overload:Microsoft.Extensions.Configuration.ServiceCollectionExtensions.TryConfigure
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Configuration.ServiceCollectionExtensions.TryConfigure
+  nameWithType: ServiceCollectionExtensions.TryConfigure
+- uid: Microsoft.Extensions.Configuration.ServiceCollectionExtensions.TryConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  name: TryConfigure<TOptions>(IServiceCollection, IConfiguration)
+  href: api/Microsoft.Extensions.Configuration.ServiceCollectionExtensions.html#Microsoft_Extensions_Configuration_ServiceCollectionExtensions_TryConfigure__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Microsoft.Extensions.Configuration.ServiceCollectionExtensions.TryConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: TryConfigure(Of TOptions)(IServiceCollection, IConfiguration)
+  fullName: Microsoft.Extensions.Configuration.ServiceCollectionExtensions.TryConfigure<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: Microsoft.Extensions.Configuration.ServiceCollectionExtensions.TryConfigure(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: ServiceCollectionExtensions.TryConfigure<TOptions>(IServiceCollection, IConfiguration)
+  nameWithType.vb: ServiceCollectionExtensions.TryConfigure(Of TOptions)(IServiceCollection, IConfiguration)
+- uid: Microsoft.Extensions.Configuration.ServiceCollectionExtensions.TryConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,``0@)
+  name: TryConfigure<TOptions>(IServiceCollection, IConfiguration, out TOptions)
+  href: api/Microsoft.Extensions.Configuration.ServiceCollectionExtensions.html#Microsoft_Extensions_Configuration_ServiceCollectionExtensions_TryConfigure__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration___0__
+  commentId: M:Microsoft.Extensions.Configuration.ServiceCollectionExtensions.TryConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,``0@)
+  name.vb: TryConfigure(Of TOptions)(IServiceCollection, IConfiguration, ByRef TOptions)
+  fullName: Microsoft.Extensions.Configuration.ServiceCollectionExtensions.TryConfigure<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, out TOptions)
+  fullName.vb: Microsoft.Extensions.Configuration.ServiceCollectionExtensions.TryConfigure(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, ByRef TOptions)
+  nameWithType: ServiceCollectionExtensions.TryConfigure<TOptions>(IServiceCollection, IConfiguration, out TOptions)
+  nameWithType.vb: ServiceCollectionExtensions.TryConfigure(Of TOptions)(IServiceCollection, IConfiguration, ByRef TOptions)
