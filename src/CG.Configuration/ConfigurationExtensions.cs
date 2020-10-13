@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 
-namespace CG.Configuration
+namespace Microsoft.Extensions.Configuration
 {
     /// <summary>
     /// This class contains extension methods related to the <see cref="IConfiguration"/>

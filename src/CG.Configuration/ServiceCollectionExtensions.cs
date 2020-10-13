@@ -1,10 +1,12 @@
 ﻿using CG.DataAnnotations;
 using CG.DataAnnotations.Options;
 using CG.Validations;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Options;
 
-namespace Microsoft.Extensions.Configuration
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// This class contains extension methods related to the <see cref="IServiceCollection"/>
@@ -48,7 +50,9 @@ namespace Microsoft.Extensions.Configuration
             (options as OptionsBase)?.ThrowIfInvalid();
 
             // Add the options to the DI container.
-            serviceCollection.TryAddSingleton(options);
+            serviceCollection.TryAddSingleton<IOptions<TOptions>>(
+                new OptionsWrapper<TOptions>(options)
+                );
 
             // Return the service collection.
             return serviceCollection;
@@ -88,7 +92,9 @@ namespace Microsoft.Extensions.Configuration
             (options as OptionsBase)?.ThrowIfInvalid();
 
             // Add the options to the DI container.
-            serviceCollection.TryAddSingleton(options);
+            serviceCollection.TryAddSingleton<IOptions<TOptions>>(
+                new OptionsWrapper<TOptions>(options)
+                );
 
             // Return the service collection.
             return serviceCollection;
