@@ -1,9 +1,9 @@
 # CG.Configuration: 
 ---
-[![Build Status](https://dev.azure.com/codegator/CG.Configuration/_apis/build/status/CodeGator.CG.Configuration?branchName=master)](https://dev.azure.com/codegator/CG.Configuration/_build/latest?definitionId=1&branchName=master)
+[![Build Status](https://dev.azure.com/codegator/CG.Configuration/_apis/build/status/CodeGator.CG.Configuration?branchName=master)](https://dev.azure.com/codegator/CG.Configuration/_build/latest?definitionId=16&branchName=master)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Configuration/index.html)
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Configuration.svg?style=flat)](https://nuget.org/packages/CG.Configuration)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Configuration/3)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Configuration/16)
 
 #### What does it do?
 The package contains configuration extensions used by other CodeGator packages.
