@@ -14,30 +14,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Configuration.ConfigurationExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Configuration.ConfigurationExtensions.html",
-          "hash": "HL9bKYywZMnOvXPruiHnWg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Configuration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Configuration.html",
-          "hash": "8aQDf/UXRo0ifQbKNwexbg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.yml",
       "output": {
         ".html": {
@@ -50,11 +26,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.Configuration.ServiceCollectionExtensions.yml",
+      "source_relative_path": "api/Microsoft.Extensions.Configuration.ConfigurationExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Extensions.Configuration.ServiceCollectionExtensions.html",
-          "hash": "qt+8QSG/W8656aFQy4xi+w=="
+          "relative_path": "api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html",
+          "hash": "YR62b45mxytF6O78T8yz9g=="
         }
       },
       "is_incremental": false,
@@ -66,7 +42,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Configuration.html",
-          "hash": "dBcqFJmPlifk+b5wE7fjdg=="
+          "hash": "GPfh27Me5u3Uo3zJD/Hqqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
+          "hash": "bxZaENS9Fot/eYU+pidQXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
+          "hash": "hxVTeeC3LnNxlnsVVZz4Sw=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "+yj1suXFoUF2Boj3bdMCnw=="
+          "hash": "3bQ6KWQCmxQp6e1LJhfJzg=="
         }
       },
       "is_incremental": false,
@@ -170,7 +170,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "i+wjazY05Gip+jCtARvIFQ=="
+          "hash": "fQsVAKX16S6WTH0ykXEVtg=="
         }
       },
       "is_incremental": false,
