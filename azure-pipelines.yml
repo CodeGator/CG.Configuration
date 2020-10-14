@@ -1,6 +1,5 @@
 trigger:
 - master
-- rel/*
 
 pool:
   vmImage: 'windows-latest'
