@@ -2,7 +2,6 @@
 using CG.DataAnnotations.Options;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
 using System.ComponentModel.DataAnnotations;
