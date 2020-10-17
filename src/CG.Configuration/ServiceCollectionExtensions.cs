@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Options;
+using System.ComponentModel.DataAnnotations;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -29,9 +30,8 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="serviceCollection">The service collection to use for the 
         /// operation.</param>
         /// <param name="configuration">The configuration to use for the operation.</param>
-        /// <returns>The value of the <paramref name="serviceCollection"/>
-        /// parameter, for chaining calls together.</returns>
-        public static IServiceCollection TryConfigure<TOptions>(
+        /// <returns>True if the options were configured; false otherwise.</returns>
+        public static bool TryConfigure<TOptions>(
             this IServiceCollection serviceCollection,
             IConfiguration configuration
             ) where TOptions : class, new()
@@ -46,16 +46,24 @@ namespace Microsoft.Extensions.DependencyInjection
             // Bind the options to the configuration.
             configuration.Bind(options);
 
-            // Verify the result - if possible.
-            (options as OptionsBase)?.ThrowIfInvalid();
+            // Are the options verifiable?
+            if (options is OptionsBase)
+            {
+                // Are the options valid?
+                if ((options as OptionsBase).IsValid())
+                {
+                    // Add the options to the DI container.
+                    serviceCollection.TryAddSingleton<IOptions<TOptions>>(
+                        new OptionsWrapper<TOptions>(options)
+                        );
 
-            // Add the options to the DI container.
-            serviceCollection.TryAddSingleton<IOptions<TOptions>>(
-                new OptionsWrapper<TOptions>(options)
-                );
+                    // Return the results.
+                    return true;
+                }
+            }
 
-            // Return the service collection.
-            return serviceCollection;
+            // Return the results.
+            return false;
         }
 
         // *******************************************************************
@@ -70,9 +78,11 @@ namespace Microsoft.Extensions.DependencyInjection
         /// operation.</param>
         /// <param name="configuration">The configuration to use for the operation.</param>
         /// <param name="options">The bound and validated options instance.</param>
-        /// <returns>The value of the <paramref name="serviceCollection"/>
-        /// parameter, for chaining calls together.</returns>
-        public static IServiceCollection TryConfigure<TOptions>(
+        /// <returns>The value of the <paramref name="serviceCollection"/> parameter,
+        /// for chaining calls together.</returns>
+        /// <exception cref="ValidationException">This exception is thrown if the options
+        /// fail validation after the binding operation.</exception>
+        public static IServiceCollection Configure<TOptions>(
             this IServiceCollection serviceCollection,
             IConfiguration configuration,
             out TOptions options
