@@ -124,8 +124,8 @@ type.</p>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <a id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_TryConfigure_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.TryConfigure*"></a>
-  <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_TryConfigure__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.TryConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">TryConfigure&lt;TOptions&gt;(IServiceCollection, IConfiguration)</h4>
+  <a id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_Configure_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.Configure*"></a>
+  <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_Configure__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration___0__" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,``0@)">Configure&lt;TOptions&gt;(IServiceCollection, IConfiguration, out TOptions)</h4>
   <div class="markdown level1 summary"><p>This method attempts to configure the specified options type with
 the service collection. It then returns a bound and validated options
 instance.</p>
@@ -133,77 +133,7 @@ instance.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection TryConfigure&lt;TOptions&gt;(this IServiceCollection serviceCollection, IConfiguration configuration)
-    where TOptions : class, new()</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
-        <td><span class="parametername">serviceCollection</span></td>
-        <td><p>The service collection to use for the
-operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span></td>
-        <td><span class="parametername">configuration</span></td>
-        <td><p>The configuration to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
-        <td><p>The value of the <code data-dev-comment-type="paramref" class="paramref">serviceCollection</code>
-parameter, for chaining calls together.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TOptions</span></td>
-        <td><p>The type of associated options.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_TryConfigure_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.TryConfigure*"></a>
-  <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_TryConfigure__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration___0__" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.TryConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,``0@)">TryConfigure&lt;TOptions&gt;(IServiceCollection, IConfiguration, out TOptions)</h4>
-  <div class="markdown level1 summary"><p>This method attempts to configure the specified options type with
-the service collection. It then returns a bound and validated options
-instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection TryConfigure&lt;TOptions&gt;(this IServiceCollection serviceCollection, IConfiguration configuration, out TOptions options)
+    <pre><code class="lang-csharp hljs">public static IServiceCollection Configure&lt;TOptions&gt;(this IServiceCollection serviceCollection, IConfiguration configuration, out TOptions options)
     where TOptions : class, new()</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -248,8 +178,94 @@ operation.</p>
     <tbody>
       <tr>
         <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
-        <td><p>The value of the <code data-dev-comment-type="paramref" class="paramref">serviceCollection</code>
-parameter, for chaining calls together.</p>
+        <td><p>The value of the <code data-dev-comment-type="paramref" class="paramref">serviceCollection</code> parameter,
+for chaining calls together.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The type of associated options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.DataAnnotations.ValidationException</span></td>
+        <td><p>This exception is thrown if the options
+fail validation after the binding operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_TryConfigure_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.TryConfigure*"></a>
+  <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_TryConfigure__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.TryConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">TryConfigure&lt;TOptions&gt;(IServiceCollection, IConfiguration)</h4>
+  <div class="markdown level1 summary"><p>This method attempts to configure the specified options type with
+the service collection. It then returns a bound and validated options
+instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryConfigure&lt;TOptions&gt;(this IServiceCollection serviceCollection, IConfiguration configuration)
+    where TOptions : class, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><span class="parametername">serviceCollection</span></td>
+        <td><p>The service collection to use for the
+operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration to use for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the options were configured; false otherwise.</p>
 </td>
       </tr>
     </tbody>
