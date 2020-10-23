@@ -8,8 +8,13 @@
 #### What does it do?
 The package contains configuration extensions used by other CodeGator packages.
 
+#### Commonly used types:
+* Microsoft.Extensions.Configuration.ConfigurationExtensions
+* CG.Configuration.AppConfig.AppConfigConfigurationProvider
+* CG.Configuration.AppConfig.AppConfigConfigurationSource
+
+
 #### What platform(s) does it support?
-* .NET 4.61x or above
 * .NET Standard 2.x or higher
 
 #### How do I install it?
