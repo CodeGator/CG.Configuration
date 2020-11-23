@@ -86,17 +86,6 @@ steps:
     versioningScheme: 'off'    
   
 - task: NuGetCommand@2
-  displayName: 'nuget internal push'
-  inputs:
-    command: 'push'
-    feedsToUse: 'select'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
-    nuGetFeedType: 'internal'
-    publishVstsFeed: 'codegator'
-    versioningScheme: 'off'
-    allowPackageConflicts: true    
-        
-- task: NuGetCommand@2
   displayName: 'nuget external push'
   inputs:
     command: 'push'
