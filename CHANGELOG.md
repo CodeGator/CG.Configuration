@@ -1,6 +1,10 @@
 # CG.Configuration change log
 ---
 
+## 2021.1
+
+* I bumped the major version for the new year.
+
 ## 2020.6
 
 * I moved to an azure CI/CD pipeline.
