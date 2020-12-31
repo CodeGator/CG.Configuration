@@ -14,6 +14,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Configuration.ConfigurationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Configuration.ConfigurationException.html",
+          "hash": "W2qRObZm2zT+M9brCcn2iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Configuration.html",
+          "hash": "Kp8IBg+PznqI0vCDflB/Aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.yml",
       "output": {
         ".html": {
@@ -30,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html",
-          "hash": "VjNwMNXefYWSWFxqytoySA=="
+          "hash": "OWZMk6wGro8ZEoPmxN1Vxg=="
         }
       },
       "is_incremental": false,
@@ -54,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "90UixO1+0C8L9QMRQl6IQg=="
+          "hash": "KvEZzxHWPIyZbGjAl7iKTA=="
         }
       },
       "is_incremental": false,
@@ -146,7 +170,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "fQsVAKX16S6WTH0ykXEVtg=="
+          "hash": "i+wjazY05Gip+jCtARvIFQ=="
         }
       },
       "is_incremental": false,
@@ -173,7 +197,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

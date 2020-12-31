@@ -1,6 +1,49 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: CG.Configuration
+  name: CG.Configuration
+  href: api/CG.Configuration.html
+  commentId: N:CG.Configuration
+  fullName: CG.Configuration
+  nameWithType: CG.Configuration
+- uid: CG.Configuration.ConfigurationException
+  name: ConfigurationException
+  href: api/CG.Configuration.ConfigurationException.html
+  commentId: T:CG.Configuration.ConfigurationException
+  fullName: CG.Configuration.ConfigurationException
+  nameWithType: ConfigurationException
+- uid: CG.Configuration.ConfigurationException.#ctor
+  name: ConfigurationException()
+  href: api/CG.Configuration.ConfigurationException.html#CG_Configuration_ConfigurationException__ctor
+  commentId: M:CG.Configuration.ConfigurationException.#ctor
+  fullName: CG.Configuration.ConfigurationException.ConfigurationException()
+  nameWithType: ConfigurationException.ConfigurationException()
+- uid: CG.Configuration.ConfigurationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ConfigurationException(SerializationInfo, StreamingContext)
+  href: api/CG.Configuration.ConfigurationException.html#CG_Configuration_ConfigurationException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:CG.Configuration.ConfigurationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: CG.Configuration.ConfigurationException.ConfigurationException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ConfigurationException.ConfigurationException(SerializationInfo, StreamingContext)
+- uid: CG.Configuration.ConfigurationException.#ctor(System.String)
+  name: ConfigurationException(String)
+  href: api/CG.Configuration.ConfigurationException.html#CG_Configuration_ConfigurationException__ctor_System_String_
+  commentId: M:CG.Configuration.ConfigurationException.#ctor(System.String)
+  fullName: CG.Configuration.ConfigurationException.ConfigurationException(System.String)
+  nameWithType: ConfigurationException.ConfigurationException(String)
+- uid: CG.Configuration.ConfigurationException.#ctor(System.String,System.Exception)
+  name: ConfigurationException(String, Exception)
+  href: api/CG.Configuration.ConfigurationException.html#CG_Configuration_ConfigurationException__ctor_System_String_System_Exception_
+  commentId: M:CG.Configuration.ConfigurationException.#ctor(System.String,System.Exception)
+  fullName: CG.Configuration.ConfigurationException.ConfigurationException(System.String, System.Exception)
+  nameWithType: ConfigurationException.ConfigurationException(String, Exception)
+- uid: CG.Configuration.ConfigurationException.#ctor*
+  name: ConfigurationException
+  href: api/CG.Configuration.ConfigurationException.html#CG_Configuration_ConfigurationException__ctor_
+  commentId: Overload:CG.Configuration.ConfigurationException.#ctor
+  isSpec: "True"
+  fullName: CG.Configuration.ConfigurationException.ConfigurationException
+  nameWithType: ConfigurationException.ConfigurationException
 - uid: Microsoft.Extensions.Configuration
   name: Microsoft.Extensions.Configuration
   href: api/Microsoft.Extensions.Configuration.html
@@ -204,6 +247,32 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsULong
   nameWithType: ConfigurationExtensions.GetAsULong
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetPath(Microsoft.Extensions.Configuration.IConfiguration)
+  name: GetPath(IConfiguration)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetPath_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetPath(Microsoft.Extensions.Configuration.IConfiguration)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetPath(Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: ConfigurationExtensions.GetPath(IConfiguration)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetPath*
+  name: GetPath
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetPath_
+  commentId: Overload:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetPath
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetPath
+  nameWithType: ConfigurationExtensions.GetPath
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetValue(Microsoft.Extensions.Configuration.IConfiguration)
+  name: GetValue(IConfiguration)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetValue_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetValue(Microsoft.Extensions.Configuration.IConfiguration)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetValue(Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: ConfigurationExtensions.GetValue(IConfiguration)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetValue*
+  name: GetValue
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetValue_
+  commentId: Overload:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetValue
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetValue
+  nameWithType: ConfigurationExtensions.GetValue
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy*
   name: SafeCopy
   href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_SafeCopy_
