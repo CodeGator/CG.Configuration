@@ -1,10 +1,8 @@
 ﻿using CG.Validations;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Reflection;
-using System.Text;
 
 namespace Microsoft.Extensions.Configuration
 {
@@ -19,6 +17,60 @@ namespace Microsoft.Extensions.Configuration
         // *******************************************************************
 
         #region Public methods
+
+        /// <summary>
+        /// This method returns the path for the specified <see cref="IConfiguration"/>
+        /// object.
+        /// </summary>
+        /// <param name="configuration">The configuration object to use for the
+        /// operation.</param>
+        /// <returns>The path for the specified <see cref="IConfiguration"/>
+        /// object.</returns>
+        public static string GetPath(
+            this IConfiguration configuration
+            )
+        {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(configuration, nameof(configuration));
+
+            // Get the current section.
+            var section = configuration.GetSection("");
+
+            // Get the path from the section.
+            var path = section.Path.TrimEnd(':');
+
+            // Return the path.
+            return path;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method returns the value for the specified <see cref="IConfiguration"/>
+        /// object.
+        /// </summary>
+        /// <param name="configuration">The configuration object to use for the
+        /// operation.</param>
+        /// <returns>The value for the specified <see cref="IConfiguration"/>
+        /// object.</returns>
+        public static string GetValue(
+            this IConfiguration configuration
+            )
+        {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(configuration, nameof(configuration));
+
+            // Get the current section.
+            var section = configuration.GetSection("");
+
+            // Get the value from the section.
+            var value = section.Value;
+
+            // Return the value.
+            return value;
+        }
+
+        // *******************************************************************
 
         /// <summary>
         /// This method safely copies a value from the specified key of the 

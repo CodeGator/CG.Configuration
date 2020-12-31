@@ -8,7 +8,7 @@
 
 Platforms supported:
       .NET Standard 2.0 or above</Description>
-    <Copyright>Copyright © 2003 - 2020 by CodeGator. All rights reserved.</Copyright>
+    <Copyright>Copyright © 2003 - 2021 by CodeGator. All rights reserved.</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/CodeGator/CG.Configuration</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
