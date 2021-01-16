@@ -1,4 +1,5 @@
-﻿using CG.Validations;
+﻿using CG.Diagnostics;
+using CG.Validations;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -19,6 +20,79 @@ namespace Microsoft.Extensions.Configuration
         #region Public methods
 
         /// <summary>
+        /// This method returns the parent section of the specified configuration
+        /// object. If there is no parent, the same section is returned.
+        /// </summary>
+        /// <param name="configuration">The configuration object to use for the
+        /// operation.</param>
+        /// <returns>The parent section for the specified <see cref="IConfiguration"/>
+        /// object.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
+        public static IConfigurationSection GetParentSection(
+            this IConfiguration configuration
+            )
+        {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(configuration, nameof(configuration));
+
+            // Get the root configuration.
+            var root = configuration.GetRoot();
+
+            // Get the current configuration path.
+            var path = configuration.GetPath();
+
+            // Figure out the path to the parent section (if any).
+            var parentPath = string.IsNullOrEmpty(path) || !path.Contains(":")
+                ? path
+                : path.Substring(0, path.LastIndexOf(":"));
+
+            // Get the parent section (if possible).
+            var parentSection = string.IsNullOrEmpty(parentPath)
+                ? configuration
+                : root.GetSection(parentPath);
+
+            // Return the parent section.
+            return parentSection as IConfigurationSection;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method always returns the root section of the specified 
+        /// configuration hierarchy.
+        /// </summary>
+        /// <param name="configuration">The configuration object to use for the
+        /// operation.</param>
+        /// <returns>The root section for the specified <see cref="IConfiguration"/>
+        /// object.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
+        public static IConfiguration GetRoot(
+            this IConfiguration configuration
+            )
+        {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(configuration, nameof(configuration));
+
+            // This is, admittedly, a hack. But, it's also the only practical
+            //   way, that I know of, to get to the root of the configuration
+            //   tree, from anywhere within that tree. If you know a better way
+            //   then feel free to share with the rest of the class.
+
+            // Get the inner root instance, cast to the type we need.
+            var root = configuration.GetFieldValue<IConfiguration>(
+                "_root",
+                true
+                );
+
+            // Return the result.
+            return root;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
         /// This method returns the path for the specified <see cref="IConfiguration"/>
         /// object.
         /// </summary>
@@ -26,6 +100,8 @@ namespace Microsoft.Extensions.Configuration
         /// operation.</param>
         /// <returns>The path for the specified <see cref="IConfiguration"/>
         /// object.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static string GetPath(
             this IConfiguration configuration
             )
@@ -53,6 +129,8 @@ namespace Microsoft.Extensions.Configuration
         /// operation.</param>
         /// <returns>The value for the specified <see cref="IConfiguration"/>
         /// object.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static string GetValue(
             this IConfiguration configuration
             )
@@ -89,6 +167,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="allowSetNulls">Indicates whether to allow a NULL value to be
         /// copied to the specified property on the target object.</param>
         /// <returns>The value of the <paramref name="configuration"/> parameter.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static IConfiguration SafeCopy<TObj, TProp>(
             this IConfiguration configuration,
             TObj target,
@@ -208,6 +288,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="key">The key to read from.</param>
         /// <param name="value">The list of values read from the key.</param>
         /// <returns>True if the setting was read and converted; false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsList<T>(
             this IConfiguration configuration,
             string key,
@@ -258,6 +340,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="key">The key to read from.</param>
         /// <param name="value">The list of values read from the key.</param>
         /// <returns>True if the setting was read and converted; false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAs<T>(
             this IConfiguration configuration,
             string key,
@@ -456,6 +540,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a boolean value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsBoolean(
             this IConfiguration configuration,
             string key,
@@ -503,6 +589,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a char value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsChar(
             this IConfiguration configuration,
             string key,
@@ -550,6 +638,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a TimeSpan value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsTimeSpan(
             this IConfiguration configuration,
             string key,
@@ -597,6 +687,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a DateTime value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsDateTime(
             this IConfiguration configuration,
             string key,
@@ -644,6 +736,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a DateTimeOffset value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsDateTimeOffset(
             this IConfiguration configuration,
             string key,
@@ -691,6 +785,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to an int value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsInt(
             this IConfiguration configuration,
             string key,
@@ -738,6 +834,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a uint value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsUInt(
             this IConfiguration configuration,
             string key,
@@ -785,6 +883,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a long value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsLong(
             this IConfiguration configuration,
             string key,
@@ -832,6 +932,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a ulong value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsULong(
             this IConfiguration configuration,
             string key,
@@ -879,6 +981,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a byte value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsByte(
             this IConfiguration configuration,
             string key,
@@ -926,6 +1030,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a float value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsFloat(
             this IConfiguration configuration,
             string key,
@@ -973,6 +1079,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a single value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsSingle(
             this IConfiguration configuration,
             string key,
@@ -1020,6 +1128,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a double value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsDouble(
             this IConfiguration configuration,
             string key,
@@ -1067,6 +1177,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a decimal value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsDecimal(
             this IConfiguration configuration,
             string key,
@@ -1114,6 +1226,8 @@ namespace Microsoft.Extensions.Configuration
         /// <param name="value">The value read by the operation.</param>
         /// <returns>True is the setting was read and converted to a GUID value; 
         /// false otherwise.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool TryGetAsGuid(
             this IConfiguration configuration,
             string key,
@@ -1164,6 +1278,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static bool GetAsBoolean(
             this IConfiguration configuration,
             string key,
@@ -1199,6 +1315,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static int GetAsInt(
             this IConfiguration configuration,
             string key,
@@ -1234,6 +1352,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static uint GetAsUInt(
             this IConfiguration configuration,
             string key,
@@ -1269,6 +1389,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static long GetAsLong(
             this IConfiguration configuration,
             string key,
@@ -1304,6 +1426,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static ulong GetAsULong(
             this IConfiguration configuration,
             string key,
@@ -1339,6 +1463,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static byte GetAsByte(
             this IConfiguration configuration,
             string key,
@@ -1374,6 +1500,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static Guid GetAsGuid(
             this IConfiguration configuration,
             string key,
@@ -1409,6 +1537,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static TimeSpan GetAsTimeSpan(
             this IConfiguration configuration,
             string key,
@@ -1444,6 +1574,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static DateTime GetAsDateTime(
             this IConfiguration configuration,
             string key,
@@ -1479,6 +1611,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static DateTimeOffset GetAsDateTimeOffset(
             this IConfiguration configuration,
             string key,
@@ -1514,6 +1648,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static decimal GetAsDecimal(
             this IConfiguration configuration,
             string key,
@@ -1549,6 +1685,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static Single GetAsSingle(
             this IConfiguration configuration,
             string key,
@@ -1585,6 +1723,8 @@ namespace Microsoft.Extensions.Configuration
         /// <returns>The value associated with the specified key, in the configuration,
         /// or the default value if the key is missing, or can't be parsed into 
         /// the desired type.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one or more of the argument is missing, or invalid.</exception>
         public static T GetAs<T>(
             this IConfiguration configuration,
             string key,
