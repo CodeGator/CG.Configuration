@@ -247,6 +247,19 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsULong
   nameWithType: ConfigurationExtensions.GetAsULong
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetParentSection(Microsoft.Extensions.Configuration.IConfiguration)
+  name: GetParentSection(IConfiguration)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetParentSection_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetParentSection(Microsoft.Extensions.Configuration.IConfiguration)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetParentSection(Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: ConfigurationExtensions.GetParentSection(IConfiguration)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetParentSection*
+  name: GetParentSection
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetParentSection_
+  commentId: Overload:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetParentSection
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetParentSection
+  nameWithType: ConfigurationExtensions.GetParentSection
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetPath(Microsoft.Extensions.Configuration.IConfiguration)
   name: GetPath(IConfiguration)
   href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetPath_Microsoft_Extensions_Configuration_IConfiguration_
@@ -260,6 +273,19 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetPath
   nameWithType: ConfigurationExtensions.GetPath
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetRoot(Microsoft.Extensions.Configuration.IConfiguration)
+  name: GetRoot(IConfiguration)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetRoot_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetRoot(Microsoft.Extensions.Configuration.IConfiguration)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetRoot(Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: ConfigurationExtensions.GetRoot(IConfiguration)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetRoot*
+  name: GetRoot
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetRoot_
+  commentId: Overload:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetRoot
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetRoot
+  nameWithType: ConfigurationExtensions.GetRoot
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetValue(Microsoft.Extensions.Configuration.IConfiguration)
   name: GetValue(IConfiguration)
   href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetValue_Microsoft_Extensions_Configuration_IConfiguration_
