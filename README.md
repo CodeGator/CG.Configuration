@@ -16,7 +16,7 @@ The package contains configuration extensions used by other CodeGator packages.
 
 
 #### What platform(s) does it support?
-* .NET Standard 2.x or higher
+* .NET 5.x or higher
 
 #### How do I install it?
 The binary is hosted on [NuGet](https://www.nuget.org/packages/CG.Configuration/). To install the package using the NuGet package manager:
