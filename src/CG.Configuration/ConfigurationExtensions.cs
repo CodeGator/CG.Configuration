@@ -9,7 +9,7 @@ namespace Microsoft.Extensions.Configuration
 {
     /// <summary>
     /// This class contains extension methods related to the <see cref="IConfiguration"/>
-    /// type.
+    /// type, for registering types related to configurations.
     /// </summary>
     public static partial class ConfigurationExtensions
     {

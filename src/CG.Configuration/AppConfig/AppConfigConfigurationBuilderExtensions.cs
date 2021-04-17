@@ -5,9 +5,9 @@ namespace Microsoft.Extensions.Configuration
 {
     /// <summary>
     /// This class contains extension methods related to the <see cref="IConfigurationBuilder"/>
-    /// type.
+    /// type, for registering types related to configuration builders.
     /// </summary>
-    public static class ConfigurationBuilderExtensions
+    public static class AppConfigConfigurationBuilderExtensions
     {
         // *******************************************************************
         // Public methods.
