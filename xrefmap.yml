@@ -50,25 +50,25 @@ references:
   commentId: N:Microsoft.Extensions.Configuration
   fullName: Microsoft.Extensions.Configuration
   nameWithType: Microsoft.Extensions.Configuration
-- uid: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions
-  name: ConfigurationBuilderExtensions
-  href: api/Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.html
-  commentId: T:Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions
-  fullName: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions
-  nameWithType: ConfigurationBuilderExtensions
-- uid: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Boolean,System.Boolean)
+- uid: Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions
+  name: AppConfigConfigurationBuilderExtensions
+  href: api/Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.html
+  commentId: T:Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions
+  fullName: Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions
+  nameWithType: AppConfigConfigurationBuilderExtensions
+- uid: Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.AddAppConfigSource(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Boolean,System.Boolean)
   name: AddAppConfigSource(IConfigurationBuilder, Boolean, Boolean)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.html#Microsoft_Extensions_Configuration_ConfigurationBuilderExtensions_AddAppConfigSource_Microsoft_Extensions_Configuration_IConfigurationBuilder_System_Boolean_System_Boolean_
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Boolean,System.Boolean)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource(Microsoft.Extensions.Configuration.IConfigurationBuilder, System.Boolean, System.Boolean)
-  nameWithType: ConfigurationBuilderExtensions.AddAppConfigSource(IConfigurationBuilder, Boolean, Boolean)
-- uid: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource*
+  href: api/Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.html#Microsoft_Extensions_Configuration_AppConfigConfigurationBuilderExtensions_AddAppConfigSource_Microsoft_Extensions_Configuration_IConfigurationBuilder_System_Boolean_System_Boolean_
+  commentId: M:Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.AddAppConfigSource(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Boolean,System.Boolean)
+  fullName: Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.AddAppConfigSource(Microsoft.Extensions.Configuration.IConfigurationBuilder, System.Boolean, System.Boolean)
+  nameWithType: AppConfigConfigurationBuilderExtensions.AddAppConfigSource(IConfigurationBuilder, Boolean, Boolean)
+- uid: Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.AddAppConfigSource*
   name: AddAppConfigSource
-  href: api/Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.html#Microsoft_Extensions_Configuration_ConfigurationBuilderExtensions_AddAppConfigSource_
-  commentId: Overload:Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource
+  href: api/Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.html#Microsoft_Extensions_Configuration_AppConfigConfigurationBuilderExtensions_AddAppConfigSource_
+  commentId: Overload:Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.AddAppConfigSource
   isSpec: "True"
-  fullName: Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.AddAppConfigSource
-  nameWithType: ConfigurationBuilderExtensions.AddAppConfigSource
+  fullName: Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.AddAppConfigSource
+  nameWithType: AppConfigConfigurationBuilderExtensions.AddAppConfigSource
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions
   name: ConfigurationExtensions
   href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html

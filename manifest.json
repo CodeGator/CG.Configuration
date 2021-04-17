@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Configuration.ConfigurationException.html",
-          "hash": "kBg74nbJuNaRwlczPaG5eSJLdvALqdDDwVK5bxZdt6k="
+          "hash": "KkmGe78Wk4/oyZOfRIPky6cLmXLD4fJccl0mPeeuTMs="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Configuration.html",
-          "hash": "NkkB2N0Cun7+Q9q865H+l1jHwejvbdpMB1pAsiV743o="
+          "hash": "0WvrrOo2jFmoxB4s2yF8mGRbXQw0gYVfIcBH5srVLrc="
         }
       },
       "is_incremental": false,
@@ -38,11 +38,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.yml",
+      "source_relative_path": "api/Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.html",
-          "hash": "CGiPEvcIv8sFw63xwCxhg9fmNJruUZN67feyRcIydfY="
+          "relative_path": "api/Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.html",
+          "hash": "menSwkFAs7s5pMsfgdxzHOtF7YTdq1Ddu27f/ZfmliY="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html",
-          "hash": "SNSYQVoLHfap+o8AbWK4nwxWPllJ4eitkIlfLWuTpXc="
+          "hash": "8UG/ZJdhRYvjMdwSx8D7JG9WgrloHj86aIEGS+oxiKU="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.Configuration.html",
-          "hash": "+XC2EN1FDusGfN4SxedSY4js6nF5ae1A7sf6rdx4OjI="
+          "hash": "+Z5WmGk29bukKZvaF5gWK/uJzAPjEFAmXD8Wm6V+0nw="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "MwJbbNfUcJiwSd9398Co2ioKpk2DEXRC2UoTpiOX7R4="
+          "hash": "WTbTVSTqER5WFgtpueEadoHOFhgFBAF9lLqqruHzorE="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "dajSEgtAs/v7CK5L21qL4vHgTdyUv0J7McsQOIiZpLA="
+          "hash": "gcp1JB3/cLklcT+72krfnba+6CuoFkaQtheZ9cEBdjQ="
         }
       },
       "is_incremental": false,
@@ -158,7 +158,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "sZkef/Zf9/x3sIpjMi9pJCC3NadtCA8/qRNXrzO12/A="
+          "hash": "YjFaRPsV/nO3i6rkFF9b8ze4zW4W9zXg5lsWAZuaL08="
         }
       },
       "is_incremental": false,
