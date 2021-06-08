@@ -13,78 +13,6 @@
       "is_incremental": false
     },
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Configuration.ConfigurationException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Configuration.ConfigurationException.html",
-          "hash": "1oGddXKfwazRG/fQ4KO2CBeTP7KDNFu4FdnKCNjIj4g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Configuration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Configuration.html",
-          "hash": "nQZyzQRhbGBHE1Lqn2mKLe9cScx9jqmovb4OagJH4m0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.Configuration.AppConfigConfigurationBuilderExtensions.html",
-          "hash": "5ro3kiuCfcxucadI7XyIygP+KG9fjJw5rTW8s48klCk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.Configuration.ConfigurationExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html",
-          "hash": "BfJPCiLrp1oVFljQ/Q0t5yXfdKdzcCs8w8K6sJ0r38U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.Configuration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Microsoft.Extensions.Configuration.html",
-          "hash": "2SgvTGYY9n1sWA/8QpJBXdNG4aKPu3VA5G6ujIlIGLM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "WTbTVSTqER5WFgtpueEadoHOFhgFBAF9lLqqruHzorE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
@@ -170,7 +98,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "qIxwa5Cl7SS9zqxWuFkEKzfSfGnSBMPao7+NibNbh1s="
+          "hash": "5tWRCS+in0hybtwlA+TQG0n08rf41ro7u+Jz4i/HL7I="
         }
       },
       "is_incremental": false,
@@ -192,12 +120,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
