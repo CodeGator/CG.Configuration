@@ -36,8 +36,8 @@ namespace Microsoft.Extensions.Configuration
             Guard.Instance().ThrowIfNull(configuration, nameof(configuration))
                 .ThrowIfNullOrEmpty(fieldName, nameof(fieldName));
 
-            // Is the field missing, or NOT an array?
-            var result = null == configuration[fieldName] ||
+            // Is the field missing and NOT an array?
+            var result = null == configuration[fieldName] &&
                 null == configuration[$"{fieldName}:0"]; 
 
             // Return the results.
