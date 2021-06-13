@@ -4,6 +4,7 @@
 ## 2021.2
 
 * I switched to the .NET 5.0 framework
+* I added the FieldIsArray and HasChildren extension methods.
 
 ## 2021.1
 

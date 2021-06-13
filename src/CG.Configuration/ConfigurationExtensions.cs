@@ -2,6 +2,7 @@
 using CG.Validations;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
 
@@ -18,6 +19,56 @@ namespace Microsoft.Extensions.Configuration
         // *******************************************************************
 
         #region Public methods
+
+        /// <summary>
+        /// This method determines if the specified field contains an array, or
+        /// not.
+        /// </summary>
+        /// <param name="configuration">The configuration object to use for the
+        /// operation.</param>
+        /// <param name="fieldName">The field name to use for the operation.</param>
+        /// <returns>True if the field contains an array; False otherwise.</returns>
+        public static bool FieldIsArray(
+            this IConfiguration configuration,
+            string fieldName
+            )
+        {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(configuration, nameof(configuration))
+                .ThrowIfNullOrEmpty(fieldName, nameof(fieldName));
+
+            // Is the field an array?
+            var result = null == configuration[$"{fieldName}:0"];
+
+            // Return the results.
+            return result;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method determines if the specified configuration section has
+        /// any child nodes, or not.
+        /// </summary>
+        /// <param name="configuration">The configuration object to use for the
+        /// operation.</param>
+        /// <returns>True if the configuration section has child nodes; False 
+        /// otherwise.</returns>
+        public static bool HasChildren(
+            this IConfiguration configuration
+            )
+        {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(configuration, nameof(configuration));
+
+            // Are there any child nodes?
+            var result = configuration.GetChildren().Any();
+
+            // Return the results.
+            return result;
+        }
+
+        // *******************************************************************
 
         /// <summary>
         /// This method returns the parent section of the specified configuration
