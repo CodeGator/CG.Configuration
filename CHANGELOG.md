@@ -5,6 +5,7 @@
 
 * I switched to the .NET 5.0 framework
 * I added the FieldIsArray and HasChildren extension methods.
+* I added the FieldIsMissing extension method.
 
 ## 2021.1
 

@@ -21,6 +21,31 @@ namespace Microsoft.Extensions.Configuration
         #region Public methods
 
         /// <summary>
+        /// This method determines if the specified field is missing, or not.
+        /// </summary>
+        /// <param name="configuration">The configuration object to use for the
+        /// operation.</param>
+        /// <param name="fieldName">The field name to use for the operation.</param>
+        /// <returns>True if the field is missing; False otherwise.</returns>
+        public static bool FieldIsMissing(
+            this IConfiguration configuration,
+            string fieldName
+            )
+        {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(configuration, nameof(configuration))
+                .ThrowIfNullOrEmpty(fieldName, nameof(fieldName));
+
+            // Is the field missing?
+            var result = null == configuration[fieldName];
+
+            // Return the results.
+            return result;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
         /// This method determines if the specified field contains an array, or
         /// not.
         /// </summary>
@@ -38,7 +63,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(fieldName, nameof(fieldName));
 
             // Is the field an array?
-            var result = null == configuration[$"{fieldName}:0"];
+            var result = null != configuration[$"{fieldName}:0"];
 
             // Return the results.
             return result;
