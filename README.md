@@ -5,6 +5,7 @@
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Configuration.svg?style=flat)](https://nuget.org/packages/CG.Configuration)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Configuration/16)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Configuration/discussions)
+[![CG.Configuration on fuget.org](https://www.fuget.org/packages/CG.Configuration/badge.svg)](https://www.fuget.org/packages/CG.Configuration)
 
 #### What does it do?
 The package contains configuration extensions used by other CodeGator packages.
@@ -25,6 +26,8 @@ PM> Install-Package CG.Configuration
 
 #### How do I contact you?
 If you've spotted a bug in the code please use the project Issues [HERE](https://github.com/CodeGator/CG.Configuration/issues)
+
+We have a discussion group [HERE](https://github.com/CodeGator/CG.Configuration/discussions)
 
 #### Is there any documentation?
 There is developer documentation [HERE](https://codegator.github.io/CG.Configuration/)
