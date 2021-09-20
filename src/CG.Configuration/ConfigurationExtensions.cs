@@ -381,7 +381,7 @@ namespace Microsoft.Extensions.Configuration
             var result = false;
 
             // Start with an empty list.
-            value = new T[0];
+            value = Array.Empty<T>();
 
             var list = new List<T>();
             var index = 0;
@@ -433,7 +433,7 @@ namespace Microsoft.Extensions.Configuration
             var result = false;
 
             // Start with a default value.
-            value = default(T);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -470,7 +470,7 @@ namespace Microsoft.Extensions.Configuration
                 else if (typeof(T).IsEnum)
                 {
                     value = (T)Convert.ChangeType(Enum.Parse(typeof(T), setting), typeof(T));
-                    result = !EqualityComparer<T>.Default.Equals(value, default(T));
+                    result = !EqualityComparer<T>.Default.Equals(value, default);
                 }
                 else if (typeof(T) == typeof(TimeSpan))
                 {
@@ -591,7 +591,7 @@ namespace Microsoft.Extensions.Configuration
                     //   for the best.
 
                     value = (T)Convert.ChangeType(setting, typeof(T));
-                    result = !EqualityComparer<T>.Default.Equals(value, default(T));
+                    result = !EqualityComparer<T>.Default.Equals(value, default);
                 }
             }
             else
@@ -599,7 +599,7 @@ namespace Microsoft.Extensions.Configuration
                 // If we get here then T is a ref type so we only have to convert
                 //   the value to T and we're done.
                 value = (T)Convert.ChangeType(setting, typeof(T));
-                result = !EqualityComparer<T>.Default.Equals(value, default(T));
+                result = !EqualityComparer<T>.Default.Equals(value, default);
             }
 
             // Return the results of the operation.
@@ -630,7 +630,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(bool);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -679,7 +679,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(char);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -728,7 +728,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(TimeSpan);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -777,7 +777,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(DateTime);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -826,7 +826,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(DateTimeOffset);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -875,7 +875,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(int);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -924,7 +924,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(uint);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -973,7 +973,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(long);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -1022,7 +1022,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(ulong);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -1071,7 +1071,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(byte);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -1120,7 +1120,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(float);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -1169,7 +1169,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(Single);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -1218,7 +1218,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(double);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -1267,7 +1267,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(decimal);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
@@ -1316,7 +1316,7 @@ namespace Microsoft.Extensions.Configuration
                 .ThrowIfNullOrEmpty(key, nameof(key));
 
             // Start with a default value.
-            value = default(Guid);
+            value = default;
 
             // First we must read the setting from the configuration.
             var setting = configuration[key];
