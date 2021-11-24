@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ConfigurationExtensions
    ">
-    <meta name="generator" content="docfx 2.58.4.0">
+    <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -934,83 +934,6 @@ one or more of the argument is missing, or invalid.</p>
       </tr>
     </tbody>
   </table>
-  <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsSingle_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsSingle*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsSingle_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Single_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsSingle(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single)">GetAsSingle(IConfiguration, String, Single)</h4>
-  <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
-object, parses it, and returns the value, or a default if the key was
-missing or the value couldn't be parsed.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float GetAsSingle(this IConfiguration configuration, string key, float defaultValue)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span></td>
-        <td><span class="parametername">configuration</span></td>
-        <td><p>The configuration to use for the operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td><p>The key to use for the operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">defaultValue</span></td>
-        <td><p>The value to return if the key is missing
-or the value can't be parsed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><p>The value associated with the specified key, in the configuration,
-or the default value if the key is missing, or can't be parsed into
-the desired type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsTimeSpan_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_TimeSpan_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan)">GetAsTimeSpan(IConfiguration, String, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
@@ -1648,6 +1571,73 @@ copied to the specified property on the target object.</p>
         <td><span class="xref">System.ArgumentException</span></td>
         <td><p>This exception is thrown whenever
 one or more of the argument is missing, or invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_ToJson_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.ToJson*"></a>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_ToJson_Microsoft_Extensions_Configuration_IConfiguration_System_Int32_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.ToJson(Microsoft.Extensions.Configuration.IConfiguration,System.Int32)">ToJson(IConfiguration, Int32)</h4>
+  <div class="markdown level1 summary"><p>This method converts the given configuration object into equivalent
+JSON text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToJson(this IConfiguration configuration, int level = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>The level for the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Formatted JSON text.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown whenever
+one or more arguments is missing or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -2644,80 +2634,6 @@ one or more of the argument is missing, or invalid.</p>
       </tr>
     </tbody>
   </table>
-  <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsSingle_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsSingle*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsSingle_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Single__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsSingle(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single@)">TryGetAsSingle(IConfiguration, String, out Single)</h4>
-  <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
-object, parses it, and returns the value as a single value.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryGetAsSingle(this IConfiguration configuration, string key, out float value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span></td>
-        <td><span class="parametername">configuration</span></td>
-        <td><p>The configuration to use for the operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">key</span></td>
-        <td><p>The key to use for the operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Single</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>The value read by the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>True is the setting was read and converted to a single value;
-false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsTimeSpan_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_TimeSpan__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan@)">TryGetAsTimeSpan(IConfiguration, String, out TimeSpan)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
@@ -2936,6 +2852,146 @@ false otherwise.</p>
         <td><span class="xref">System.ArgumentException</span></td>
         <td><p>This exception is thrown whenever
 one or more of the argument is missing, or invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSON_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSON*"></a>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSON_Microsoft_Extensions_Configuration_IConfiguration_System_String_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSON(Microsoft.Extensions.Configuration.IConfiguration,System.String)">WriteAsJSON(IConfiguration, String)</h4>
+  <div class="markdown level1 summary"><p>This method blasts the contents of the given configuration object
+to the specified file, as formatted JSON text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteAsJSON(this IConfiguration configuration, string filePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration object to use for
+the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The file to write to, or create if needed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSON_Microsoft_Extensions_Configuration_IConfiguration_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The file is created if needed. The contents of the file are overwritten 
+without warning. The contents of the configuration object are not 
+distributed between environments.
+</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown whenever
+one or more arguments is missing or invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync*"></a>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Threading.CancellationToken)">WriteAsJSONAsync(IConfiguration, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This method blasts the contents of the given configuration object
+to the specified file, as formatted JSON text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task WriteAsJSONAsync(this IConfiguration configuration, string filePath, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration object to use for
+the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The file to write to, or create if needed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The file is created if needed. The contents of the file are overwritten 
+without warning. The contents of the configuration object are not 
+distributed between environments.
+</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown whenever
+one or more arguments is missing or invalid.</p>
 </td>
       </tr>
     </tbody>

@@ -221,19 +221,6 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsLong
   nameWithType: ConfigurationExtensions.GetAsLong
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsSingle(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single)
-  name: GetAsSingle(IConfiguration, String, Single)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsSingle_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Single_
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsSingle(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsSingle(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.Single)
-  nameWithType: ConfigurationExtensions.GetAsSingle(IConfiguration, String, Single)
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsSingle*
-  name: GetAsSingle
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsSingle_
-  commentId: Overload:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsSingle
-  isSpec: "True"
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsSingle
-  nameWithType: ConfigurationExtensions.GetAsSingle
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan)
   name: GetAsTimeSpan(IConfiguration, String, TimeSpan)
   href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_TimeSpan_
@@ -354,6 +341,19 @@ references:
   fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy(Of TObj, TProp)(Microsoft.Extensions.Configuration.IConfiguration, TObj, System.Linq.Expressions.Expression(Of System.Func(Of TObj, TProp)), System.String, System.Boolean)
   nameWithType: ConfigurationExtensions.SafeCopy<TObj, TProp>(IConfiguration, TObj, Expression<Func<TObj, TProp>>, String, Boolean)
   nameWithType.vb: ConfigurationExtensions.SafeCopy(Of TObj, TProp)(IConfiguration, TObj, Expression(Of Func(Of TObj, TProp)), String, Boolean)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.ToJson(Microsoft.Extensions.Configuration.IConfiguration,System.Int32)
+  name: ToJson(IConfiguration, Int32)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_ToJson_Microsoft_Extensions_Configuration_IConfiguration_System_Int32_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.ToJson(Microsoft.Extensions.Configuration.IConfiguration,System.Int32)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.ToJson(Microsoft.Extensions.Configuration.IConfiguration, System.Int32)
+  nameWithType: ConfigurationExtensions.ToJson(IConfiguration, Int32)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.ToJson*
+  name: ToJson
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_ToJson_
+  commentId: Overload:Microsoft.Extensions.Configuration.ConfigurationExtensions.ToJson
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.ToJson
+  nameWithType: ConfigurationExtensions.ToJson
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAs*
   name: TryGetAs
   href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAs_
@@ -562,22 +562,6 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsLong
   nameWithType: ConfigurationExtensions.TryGetAsLong
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsSingle(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single@)
-  name: TryGetAsSingle(IConfiguration, String, out Single)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsSingle_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Single__
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsSingle(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Single@)
-  name.vb: TryGetAsSingle(IConfiguration, String, ByRef Single)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsSingle(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Single)
-  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsSingle(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Single)
-  nameWithType: ConfigurationExtensions.TryGetAsSingle(IConfiguration, String, out Single)
-  nameWithType.vb: ConfigurationExtensions.TryGetAsSingle(IConfiguration, String, ByRef Single)
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsSingle*
-  name: TryGetAsSingle
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsSingle_
-  commentId: Overload:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsSingle
-  isSpec: "True"
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsSingle
-  nameWithType: ConfigurationExtensions.TryGetAsSingle
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan@)
   name: TryGetAsTimeSpan(IConfiguration, String, out TimeSpan)
   href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_TimeSpan__
@@ -626,3 +610,29 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsULong
   nameWithType: ConfigurationExtensions.TryGetAsULong
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSON(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name: WriteAsJSON(IConfiguration, String)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSON_Microsoft_Extensions_Configuration_IConfiguration_System_String_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSON(Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSON(Microsoft.Extensions.Configuration.IConfiguration, System.String)
+  nameWithType: ConfigurationExtensions.WriteAsJSON(IConfiguration, String)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSON*
+  name: WriteAsJSON
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSON_
+  commentId: Overload:Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSON
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSON
+  nameWithType: ConfigurationExtensions.WriteAsJSON
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Threading.CancellationToken)
+  name: WriteAsJSONAsync(IConfiguration, String, CancellationToken)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Threading_CancellationToken_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Threading.CancellationToken)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.Threading.CancellationToken)
+  nameWithType: ConfigurationExtensions.WriteAsJSONAsync(IConfiguration, String, CancellationToken)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync*
+  name: WriteAsJSONAsync
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_
+  commentId: Overload:Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync
+  isSpec: "True"
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync
+  nameWithType: ConfigurationExtensions.WriteAsJSONAsync
