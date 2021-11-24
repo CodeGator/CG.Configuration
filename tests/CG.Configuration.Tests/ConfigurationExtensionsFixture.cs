@@ -432,26 +432,6 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsSingle(Microsoft.Extensions.Configuration.IConfiguration, string, out float)"/>
-        /// method copies a value from the configuration as specified by the key 
-        /// used in the operation.
-        /// </summary>
-        [TestMethod]
-        public void ConfigurationExtensions_TryGetAsSingle()
-        {
-            // Arrange ...
-
-            // Act ...
-            var result = Configuration.TryGetAsSingle("single", out var value);
-
-            // Assert ...
-            Assert.IsTrue(result == true);
-            Assert.IsTrue(value == Single.Parse("400"));
-        }
-
-        // *******************************************************************
-
-        /// <summary>
         /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, string, out TimeSpan)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
@@ -811,44 +791,6 @@ namespace CG.Configuration
 
             // Assert ...
             Assert.IsTrue(value == long.Parse("400"));
-        }
-
-        // *******************************************************************
-
-        /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsSingle(Microsoft.Extensions.Configuration.IConfiguration, string, float)"/>
-        /// method copies a value from the configuration as specified by the key 
-        /// used in the operation.
-        /// </summary>
-        [TestMethod]
-        public void ConfigurationExtensions_GetAsSingle()
-        {
-            // Arrange ...
-
-            // Act ...
-            var value = Configuration.GetAsSingle("single", Single.Parse("500"));
-
-            // Assert ...
-            Assert.IsTrue(value == Single.Parse("400"));
-        }
-
-        // *******************************************************************
-
-        /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsSingle(Microsoft.Extensions.Configuration.IConfiguration, string, float)"/>
-        /// method copies a default value if the key is missing, or can't be 
-        /// parsed, or can't be converted to the desired type.
-        /// </summary>
-        [TestMethod]
-        public void ConfigurationExtensions_GetAsSingle_Default()
-        {
-            // Arrange ...
-
-            // Act ...
-            var value = Configuration.GetAsSingle("notthere", Single.Parse("500"));
-
-            // Assert ...
-            Assert.IsTrue(value == Single.Parse("500"));
         }
 
         // *******************************************************************

@@ -1,10 +1,16 @@
 ﻿using CG.Diagnostics;
+using CG.IO;
 using CG.Validations;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
+using System.Text;
+using System.Text.Json;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Microsoft.Extensions.Configuration
 {
@@ -552,14 +558,6 @@ namespace Microsoft.Extensions.Configuration
                         value = (T)Convert.ChangeType(fValue, typeof(T));
                     }
                 }
-                else if (typeof(T) == typeof(Single))
-                {
-                    result = configuration.TryGetAsSingle(key, out var sValue);
-                    if (result)
-                    {
-                        value = (T)Convert.ChangeType(sValue, typeof(T));
-                    }
-                }
                 else if (typeof(T) == typeof(double))
                 {
                     result = configuration.TryGetAsDouble(key, out var dValue);
@@ -643,16 +641,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = bool.TryParse(setting, out var bValue);
-
-            // Did we succeed?
-            if (result)
+            if (bool.TryParse(setting, out value))
             {
-                value = (bool)Convert.ChangeType(bValue, typeof(bool));
+                // We succeeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -692,16 +688,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = char.TryParse(setting, out var cValue);
-
-            // Did we succeed?
-            if (result)
+            if (char.TryParse(setting, out value))
             {
-                value = (char)Convert.ChangeType(cValue, typeof(char));
+                // We succeeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -741,16 +735,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = TimeSpan.TryParse(setting, out var tsValue);
-
-            // Did we succeed?
-            if (result)
+            if (TimeSpan.TryParse(setting, out value))
             {
-                value = (TimeSpan)Convert.ChangeType(tsValue, typeof(TimeSpan));
+                // We succeeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -790,16 +782,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = DateTime.TryParse(setting, out var tsValue);
-
-            // Did we succeed?
-            if (result)
+            if (DateTime.TryParse(setting, out value))
             {
-                value = (DateTime)Convert.ChangeType(tsValue, typeof(DateTime));
+                // We succeeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -839,16 +829,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = DateTimeOffset.TryParse(setting, out var tsValue);
-
-            // Did we succeed?
-            if (result)
+            if (DateTimeOffset.TryParse(setting, out value))
             {
-                value = (DateTimeOffset)Convert.ChangeType(tsValue, typeof(DateTimeOffset));
+                // We succeeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -888,16 +876,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = int.TryParse(setting, out var iValue);
-
-            // Did we succeed?
-            if (result)
+            if (int.TryParse(setting, out value))
             {
-                value = (int)Convert.ChangeType(iValue, typeof(int));
+                // We succeeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -937,16 +923,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = uint.TryParse(setting, out var uiValue);
-
-            // Did we succeed?
-            if (result)
+            if (uint.TryParse(setting, out value))
             {
-                value = (uint)Convert.ChangeType(uiValue, typeof(uint));
+                // We succeeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -986,16 +970,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = long.TryParse(setting, out var uiValue);
-
-            // Did we succeed?
-            if (result)
+            if (long.TryParse(setting, out value))
             {
-                value = (long)Convert.ChangeType(uiValue, typeof(long));
+                // We succeeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -1035,16 +1017,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = ulong.TryParse(setting, out var ulValue);
-
-            // Did we succeed?
-            if (result)
+            if (ulong.TryParse(setting, out value))
             {
-                value = (ulong)Convert.ChangeType(ulValue, typeof(ulong));
+                // We suceeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -1084,16 +1064,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = byte.TryParse(setting, out var bValue);
-
-            // Did we succeed?
-            if (result)
+            if (byte.TryParse(setting, out value))
             {
-                value = (byte)Convert.ChangeType(bValue, typeof(byte));
+                // We succeeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -1133,65 +1111,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = float.TryParse(setting, out var fValue);
-
-            // Did we succeed?
-            if (result)
+            if (float.TryParse(setting, out value))
             {
-                value = (float)Convert.ChangeType(fValue, typeof(float));
+                // We succeeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
-        }
-
-        // *******************************************************************
-
-        /// <summary>
-        /// This method reads a key-value pair from an <see cref="IConfiguration"/> 
-        /// object, parses it, and returns the value as a single value. 
-        /// </summary>
-        /// <param name="configuration">The configuration to use for the operation.</param>
-        /// <param name="key">The key to use for the operation.</param>
-        /// <param name="value">The value read by the operation.</param>
-        /// <returns>True is the setting was read and converted to a single value; 
-        /// false otherwise.</returns>
-        /// <exception cref="ArgumentException">This exception is thrown whenever
-        /// one or more of the argument is missing, or invalid.</exception>
-        public static bool TryGetAsSingle(
-            this IConfiguration configuration,
-            string key,
-            out Single value
-            )
-        {
-            // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(configuration, nameof(configuration))
-                .ThrowIfNullOrEmpty(key, nameof(key));
-
-            // Start with a default value.
-            value = default;
-
-            // First we must read the setting from the configuration.
-            var setting = configuration[key];
-
-            // Did we fail?
-            if (string.IsNullOrEmpty(setting))
-            {
-                // Return the results of the operation.
-                return false;
-            }
-
-            // Try to parse the value.
-            var result = Single.TryParse(setting, out var sValue);
-
-            // Did we succeed?
-            if (result)
-            {
-                value = (Single)Convert.ChangeType(sValue, typeof(Single));
-            }
-
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -1231,16 +1158,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = double.TryParse(setting, out var dValue);
-
-            // Did we succeed?
-            if (result)
+            if (double.TryParse(setting, out value))
             {
-                value = (double)Convert.ChangeType(dValue, typeof(double));
+                // We converted the value.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed to convert the value.
+            return false;
         }
 
         // *******************************************************************
@@ -1280,16 +1205,14 @@ namespace Microsoft.Extensions.Configuration
             }
 
             // Try to parse the value.
-            var result = decimal.TryParse(setting, out var dValue);
-
-            // Did we succeed?
-            if (result)
+            if (decimal.TryParse(setting, out value))
             {
-                value = (decimal)Convert.ChangeType(dValue, typeof(decimal));
+                // We succeeded.
+                return true;
             }
 
-            // Return the results.
-            return result;
+            // We failed.
+            return false;
         }
 
         // *******************************************************************
@@ -1755,43 +1678,6 @@ namespace Microsoft.Extensions.Configuration
         /// object, parses it, and returns the value, or a default if the key was
         /// missing or the value couldn't be parsed.
         /// </summary>
-        /// <param name="configuration">The configuration to use for the operation.</param>
-        /// <param name="key">The key to use for the operation.</param>
-        /// <param name="defaultValue">The value to return if the key is missing 
-        /// or the value can't be parsed.</param>
-        /// <returns>The value associated with the specified key, in the configuration,
-        /// or the default value if the key is missing, or can't be parsed into 
-        /// the desired type.</returns>
-        /// <exception cref="ArgumentException">This exception is thrown whenever
-        /// one or more of the argument is missing, or invalid.</exception>
-        public static Single GetAsSingle(
-            this IConfiguration configuration,
-            string key,
-            Single defaultValue
-            )
-        {
-            // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(configuration, nameof(configuration))
-                .ThrowIfNullOrEmpty(key, nameof(key));
-
-            // Attempt to read/parse/convert the value.
-            if (!configuration.TryGetAsSingle(key, out var retValue))
-            {
-                // If we fail, use the default value.
-                retValue = defaultValue;
-            }
-
-            // Return the results.
-            return retValue;
-        }
-
-        // *******************************************************************
-
-        /// <summary>
-        /// This method reads a key-value pair from an <see cref="IConfiguration"/> 
-        /// object, parses it, and returns the value, or a default if the key was
-        /// missing or the value couldn't be parsed.
-        /// </summary>
         /// <typeparam name="T">The type to use for the operation.</typeparam>
         /// <param name="configuration">The configuration to use for the operation.</param>
         /// <param name="key">The key to use for the operation.</param>
@@ -1821,6 +1707,131 @@ namespace Microsoft.Extensions.Configuration
 
             // Return the results.
             return retValue;
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method converts the given configuration object into equivalent 
+        /// JSON text.
+        /// </summary>
+        /// <param name="configuration">The configuration to use for the operation.</param>
+        /// <param name="level">The level for the operation.</param>
+        /// <returns>Formatted JSON text.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever 
+        /// one or more arguments is missing or invalid.</exception>
+        public static string ToJson(
+            this IConfiguration configuration,
+            int level = 1
+            )
+        {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(configuration, nameof(configuration))
+                .ThrowIfLessThanOrEqualZero(level, nameof(level));
+
+            // Start with the opening brace.
+            var sb = new StringBuilder("{" + Environment.NewLine);
+
+            // Create some tabs for formatting.
+            var tabs = new string('\t', level);
+
+            // Loop through the children.
+            foreach (var child in configuration.GetChildren())
+            {
+                // Append the child as JSON.
+                if (child.HasChildren())
+                {
+                    sb.AppendLine($"{tabs}\"{child.Key}\": {child.ToJson(level+1)},");
+                }
+                else
+                {
+                    sb.AppendLine($"{tabs}\"{child.Key}\": \"{child.Value}\",");
+                }
+            }
+
+            // Remove the trailing comma.
+            sb.Remove(sb.Length - 1, 1);
+
+            // Add the final brace.
+            sb.AppendLine("}" + Environment.NewLine);
+
+            // Return the formatted JSON.
+            return sb.ToString();
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method blasts the contents of the given configuration object
+        /// to the specified file, as formatted JSON text.  
+        /// </summary>
+        /// <param name="configuration">The configuration object to use for 
+        /// the operation.</param>
+        /// <param name="filePath">The file to write to, or create if needed.</param>
+        /// <exception cref="ArgumentException">This exception is thrown whenever 
+        /// one or more arguments is missing or invalid.</exception>
+        /// <remarks>
+        /// <para>
+        /// The file is created if needed. The contents of the file are overwritten 
+        /// without warning. The contents of the configuration object are not 
+        /// distributed between environments.
+        /// </para>
+        /// </remarks>
+        public static void WriteAsJSON(
+            this IConfiguration configuration,
+            string filePath
+            )
+        {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(configuration, nameof(configuration))
+                .ThrowIfNullOrEmpty(filePath, nameof(filePath));
+
+            // Convert the configuration to JSON.
+            var json = configuration.ToJson();
+
+            // Write the file.
+            File.WriteAllText(filePath, json);
+        }
+
+        // *******************************************************************
+
+        /// <summary>
+        /// This method blasts the contents of the given configuration object
+        /// to the specified file, as formatted JSON text.  
+        /// </summary>
+        /// <param name="configuration">The configuration object to use for 
+        /// the operation.</param>
+        /// <param name="filePath">The file to write to, or create if needed.</param>
+        /// <param name="cancellationToken">A cancellation token.</param>
+        /// <returns>A task to perform the operation.</returns>
+        /// <exception cref="ArgumentException">This exception is thrown whenever 
+        /// one or more arguments is missing or invalid.</exception>
+        /// <remarks>
+        /// <para>
+        /// The file is created if needed. The contents of the file are overwritten 
+        /// without warning. The contents of the configuration object are not 
+        /// distributed between environments.
+        /// </para>
+        /// </remarks>
+        public static async Task WriteAsJSONAsync(
+            this IConfiguration configuration,
+            string filePath,
+            CancellationToken cancellationToken = default
+            )
+        {
+            // Validate the parameters before attempting to use them.
+            Guard.Instance().ThrowIfNull(configuration, nameof(configuration))
+                .ThrowIfNullOrEmpty(filePath, nameof(filePath));
+
+            // Convert the configuration to JSON.
+            var json = configuration.ToJson();
+
+            // Write the file.
+            await File.WriteAllTextAsync(
+                filePath,
+                json,
+                cancellationToken
+                ).ConfigureAwait(false);
         }
 
         #endregion
