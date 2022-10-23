@@ -1,0 +1,14 @@
+﻿global using CG.Configuration.AppConfig;
+global using CG.Validations;
+global using Microsoft.Extensions.Configuration;
+global using System;
+global using System.Collections.Generic;
+global using System.IO;
+global using System.Linq;
+global using System.Linq.Expressions;
+global using System.Reflection;
+global using System.Runtime.Serialization;
+global using System.Text;
+global using System.Threading;
+global using System.Threading.Tasks;
+global using System.Xml;
