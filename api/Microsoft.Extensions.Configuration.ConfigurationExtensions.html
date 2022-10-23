@@ -301,23 +301,6 @@ the desired type.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsBoolean_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsBoolean*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsBoolean_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Boolean_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Boolean)">GetAsBoolean(IConfiguration, String, Boolean)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
@@ -374,23 +357,6 @@ or the value can't be parsed.</p>
         <td><p>The value associated with the specified key, in the configuration,
 or the default value if the key is missing, or can't be parsed into
 the desired type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -455,25 +421,8 @@ the desired type.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsDateTime_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTime*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsDateTime_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTime_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTime)">GetAsDateTime(IConfiguration, String, DateTime)</h4>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsDateTime_Microsoft_Extensions_Configuration_IConfiguration_System_String_DateTime_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTime)">GetAsDateTime(IConfiguration, String, DateTime)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
 object, parses it, and returns the value, or a default if the key was
 missing or the value couldn't be parsed.</p>
@@ -506,7 +455,7 @@ missing or the value couldn't be parsed.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">defaultValue</span></td>
         <td><p>The value to return if the key is missing
 or the value can't be parsed.</p>
@@ -524,7 +473,7 @@ or the value can't be parsed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td><p>The value associated with the specified key, in the configuration,
 or the default value if the key is missing, or can't be parsed into
 the desired type.</p>
@@ -532,25 +481,8 @@ the desired type.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsDateTimeOffset_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTimeOffset*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsDateTimeOffset_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTimeOffset_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTimeOffset)">GetAsDateTimeOffset(IConfiguration, String, DateTimeOffset)</h4>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsDateTimeOffset_Microsoft_Extensions_Configuration_IConfiguration_System_String_DateTimeOffset_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTimeOffset)">GetAsDateTimeOffset(IConfiguration, String, DateTimeOffset)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
 object, parses it, and returns the value, or a default if the key was
 missing or the value couldn't be parsed.</p>
@@ -583,7 +515,7 @@ missing or the value couldn't be parsed.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><span class="parametername">defaultValue</span></td>
         <td><p>The value to return if the key is missing
 or the value can't be parsed.</p>
@@ -601,27 +533,10 @@ or the value can't be parsed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><p>The value associated with the specified key, in the configuration,
 or the default value if the key is missing, or can't be parsed into
 the desired type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -686,25 +601,8 @@ the desired type.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsGuid_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsGuid*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsGuid_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Guid_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Guid)">GetAsGuid(IConfiguration, String, Guid)</h4>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsGuid_Microsoft_Extensions_Configuration_IConfiguration_System_String_Guid_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,Guid)">GetAsGuid(IConfiguration, String, Guid)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
 object, parses it, and returns the value, or a default if the key was
 missing or the value couldn't be parsed.</p>
@@ -737,7 +635,7 @@ missing or the value couldn't be parsed.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Guid</span></td>
+        <td><span class="xref">Guid</span></td>
         <td><span class="parametername">defaultValue</span></td>
         <td><p>The value to return if the key is missing
 or the value can't be parsed.</p>
@@ -755,27 +653,10 @@ or the value can't be parsed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Guid</span></td>
+        <td><span class="xref">Guid</span></td>
         <td><p>The value associated with the specified key, in the configuration,
 or the default value if the key is missing, or can't be parsed into
 the desired type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -840,23 +721,6 @@ the desired type.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsLong_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsLong*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsLong_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Int64_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsLong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Int64)">GetAsLong(IConfiguration, String, Int64)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
@@ -917,25 +781,8 @@ the desired type.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsTimeSpan_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_TimeSpan_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan)">GetAsTimeSpan(IConfiguration, String, TimeSpan)</h4>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_TimeSpan_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,TimeSpan)">GetAsTimeSpan(IConfiguration, String, TimeSpan)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
 object, parses it, and returns the value, or a default if the key was
 missing or the value couldn't be parsed.</p>
@@ -968,7 +815,7 @@ missing or the value couldn't be parsed.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">defaultValue</span></td>
         <td><p>The value to return if the key is missing
 or the value can't be parsed.</p>
@@ -986,27 +833,10 @@ or the value can't be parsed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><p>The value associated with the specified key, in the configuration,
 or the default value if the key is missing, or can't be parsed into
 the desired type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -1071,23 +901,6 @@ the desired type.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsULong_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsULong*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsULong_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_UInt64_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsULong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.UInt64)">GetAsULong(IConfiguration, String, UInt64)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
@@ -1148,23 +961,6 @@ the desired type.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetParentSection_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetParentSection*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetParentSection_Microsoft_Extensions_Configuration_IConfiguration_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetParentSection(Microsoft.Extensions.Configuration.IConfiguration)">GetParentSection(IConfiguration)</h4>
   <div class="markdown level1 summary"><p>This method returns the parent section of the specified configuration
@@ -1207,23 +1003,6 @@ operation.</p>
         <td><span class="xref">Microsoft.Extensions.Configuration.IConfigurationSection</span></td>
         <td><p>The parent section for the specified <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
 object.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -1274,23 +1053,6 @@ object.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetRoot_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetRoot*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetRoot_Microsoft_Extensions_Configuration_IConfiguration_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetRoot(Microsoft.Extensions.Configuration.IConfiguration)">GetRoot(IConfiguration)</h4>
   <div class="markdown level1 summary"><p>This method always returns the root section of the specified
@@ -1337,23 +1099,6 @@ object.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetValue_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetValue*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_GetValue_Microsoft_Extensions_Configuration_IConfiguration_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.GetValue(Microsoft.Extensions.Configuration.IConfiguration)">GetValue(IConfiguration)</h4>
   <div class="markdown level1 summary"><p>This method returns the value for the specified <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
@@ -1396,23 +1141,6 @@ operation.</p>
         <td><span class="xref">System.String</span></td>
         <td><p>The value for the specified <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
 object.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -1464,7 +1192,7 @@ otherwise.</p>
     </tbody>
   </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_SafeCopy_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_SafeCopy__2_Microsoft_Extensions_Configuration_IConfiguration___0_System_Linq_Expressions_Expression_System_Func___0___1___System_String_System_Boolean_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy``2(Microsoft.Extensions.Configuration.IConfiguration,``0,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Boolean)">SafeCopy&lt;TObj, TProp&gt;(IConfiguration, TObj, Expression&lt;Func&lt;TObj, TProp&gt;&gt;, String, Boolean)</h4>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_SafeCopy__2_Microsoft_Extensions_Configuration_IConfiguration___0_Expression_Func___0___1___System_String_System_Boolean_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy``2(Microsoft.Extensions.Configuration.IConfiguration,``0,Expression{Func{``0,``1}},System.String,System.Boolean)">SafeCopy&lt;TObj, TProp&gt;(IConfiguration, TObj, Expression&lt;Func&lt;TObj, TProp&gt;&gt;, String, Boolean)</h4>
   <div class="markdown level1 summary"><p>This method safely copies a value from the specified key of the
 configuration to the property on the target oject using a LINQ
 expression to identify the property to change. If the configuration
@@ -1501,7 +1229,7 @@ set to TRUE.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TObj, TProp&gt;&gt;</td>
+        <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TObj, TProp&gt;&gt;</td>
         <td><span class="parametername">selector</span></td>
         <td><p>The LINQ expression to use for the operation.</p>
 </td>
@@ -1558,23 +1286,6 @@ copied to the specified property on the target object.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_ToJson_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.ToJson*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_ToJson_Microsoft_Extensions_Configuration_IConfiguration_System_Int32_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.ToJson(Microsoft.Extensions.Configuration.IConfiguration,System.Int32)">ToJson(IConfiguration, Int32)</h4>
   <div class="markdown level1 summary"><p>This method converts the given configuration object into equivalent
@@ -1621,23 +1332,6 @@ JSON text.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><p>Formatted JSON text.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more arguments is missing or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -1714,23 +1408,6 @@ object, parses it, and returns the value as <code data-dev-comment-type="typepar
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsBoolean_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsBoolean*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsBoolean_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Boolean__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Boolean@)">TryGetAsBoolean(IConfiguration, String, out Boolean)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
@@ -1784,23 +1461,6 @@ object, parses it, and returns the value as a boolean value.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>True is the setting was read and converted to a boolean value;
 false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -1862,23 +1522,6 @@ false otherwise.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsChar_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsChar*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsChar_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Char__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsChar(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Char@)">TryGetAsChar(IConfiguration, String, out Char)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
@@ -1936,25 +1579,8 @@ false otherwise.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDateTime_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDateTime_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTime__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTime@)">TryGetAsDateTime(IConfiguration, String, out DateTime)</h4>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDateTime_Microsoft_Extensions_Configuration_IConfiguration_System_String_DateTime__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTime@)">TryGetAsDateTime(IConfiguration, String, out DateTime)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
 object, parses it, and returns the value as a DateTime value.</p>
 </div>
@@ -1986,7 +1612,7 @@ object, parses it, and returns the value as a DateTime value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The value read by the operation.</p>
 </td>
@@ -2010,25 +1636,8 @@ false otherwise.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDateTimeOffset_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDateTimeOffset_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTimeOffset__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTimeOffset@)">TryGetAsDateTimeOffset(IConfiguration, String, out DateTimeOffset)</h4>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDateTimeOffset_Microsoft_Extensions_Configuration_IConfiguration_System_String_DateTimeOffset__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTimeOffset@)">TryGetAsDateTimeOffset(IConfiguration, String, out DateTimeOffset)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
 object, parses it, and returns the value as a DateTimeOffset value.</p>
 </div>
@@ -2060,7 +1669,7 @@ object, parses it, and returns the value as a DateTimeOffset value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><span class="xref">DateTimeOffset</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The value read by the operation.</p>
 </td>
@@ -2080,23 +1689,6 @@ object, parses it, and returns the value as a DateTimeOffset value.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>True is the setting was read and converted to a DateTimeOffset value;
 false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -2158,23 +1750,6 @@ false otherwise.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDouble_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDouble*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDouble_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Double__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDouble(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Double@)">TryGetAsDouble(IConfiguration, String, out Double)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
@@ -2228,23 +1803,6 @@ object, parses it, and returns the value as a double value.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>True is the setting was read and converted to a double value;
 false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -2306,25 +1864,8 @@ false otherwise.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsGuid_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsGuid_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Guid__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Guid@)">TryGetAsGuid(IConfiguration, String, out Guid)</h4>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsGuid_Microsoft_Extensions_Configuration_IConfiguration_System_String_Guid__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,Guid@)">TryGetAsGuid(IConfiguration, String, out Guid)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
 object, parses it, and returns the value as a GUID value.</p>
 </div>
@@ -2356,7 +1897,7 @@ object, parses it, and returns the value as a GUID value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Guid</span></td>
+        <td><span class="xref">Guid</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The value read by the operation.</p>
 </td>
@@ -2376,23 +1917,6 @@ object, parses it, and returns the value as a GUID value.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>True is the setting was read and converted to a GUID value;
 false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -2454,25 +1978,8 @@ false otherwise.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsList_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsList__1_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Collections_Generic_IEnumerable___0___" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Collections.Generic.IEnumerable{``0}@)">TryGetAsList&lt;T&gt;(IConfiguration, String, out IEnumerable&lt;T&gt;)</h4>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsList__1_Microsoft_Extensions_Configuration_IConfiguration_System_String_IEnumerable___0___" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,IEnumerable{``0}@)">TryGetAsList&lt;T&gt;(IConfiguration, String, out IEnumerable&lt;T&gt;)</h4>
   <div class="markdown level1 summary"><p>This method reads a list of key-value-pairs and converts them to
 the specified type before returning.</p>
 </div>
@@ -2504,7 +2011,7 @@ the specified type before returning.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
         <td><span class="parametername">value</span></td>
         <td><p>The list of values read from the key.</p>
 </td>
@@ -2539,23 +2046,6 @@ the specified type before returning.</p>
       <tr>
         <td><span class="parametername">T</span></td>
         <td><p>The type to use for the operation.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -2617,25 +2107,8 @@ false otherwise.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsTimeSpan_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_TimeSpan__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan@)">TryGetAsTimeSpan(IConfiguration, String, out TimeSpan)</h4>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_TimeSpan__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,TimeSpan@)">TryGetAsTimeSpan(IConfiguration, String, out TimeSpan)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
 object, parses it, and returns the value as a TimeSpan value.</p>
 </div>
@@ -2667,7 +2140,7 @@ object, parses it, and returns the value as a TimeSpan value.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="xref">TimeSpan</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>The value read by the operation.</p>
 </td>
@@ -2687,23 +2160,6 @@ object, parses it, and returns the value as a TimeSpan value.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><p>True is the setting was read and converted to a TimeSpan value;
 false otherwise.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
 </td>
       </tr>
     </tbody>
@@ -2765,23 +2221,6 @@ false otherwise.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsULong_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsULong*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsULong_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_UInt64__" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsULong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.UInt64@)">TryGetAsULong(IConfiguration, String, out UInt64)</h4>
   <div class="markdown level1 summary"><p>This method reads a key-value pair from an <span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span>
@@ -2839,23 +2278,6 @@ false otherwise.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more of the argument is missing, or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSON_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSON*"></a>
   <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSON_Microsoft_Extensions_Configuration_IConfiguration_System_String_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSON(Microsoft.Extensions.Configuration.IConfiguration,System.String)">WriteAsJSON(IConfiguration, String)</h4>
   <div class="markdown level1 summary"><p>This method blasts the contents of the given configuration object
@@ -2898,32 +2320,15 @@ without warning. The contents of the configuration object are not
 distributed between environments.
 </p>
 </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more arguments is missing or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync*"></a>
-  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Threading.CancellationToken)">WriteAsJSONAsync(IConfiguration, String, CancellationToken)</h4>
+  <h4 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_Microsoft_Extensions_Configuration_IConfiguration_System_String_CancellationToken_" data-uid="Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration,System.String,CancellationToken)">WriteAsJSONAsync(IConfiguration, String, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>This method blasts the contents of the given configuration object
 to the specified file, as formatted JSON text.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static async Task WriteAsJSONAsync(this IConfiguration configuration, string filePath, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public static async Task WriteAsJSONAsync(this IConfiguration configuration, string filePath, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2949,7 +2354,7 @@ the operation.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
         <td><p>A cancellation token.</p>
 </td>
@@ -2966,36 +2371,19 @@ the operation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td><p>A task to perform the operation.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <h5 id="Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_Microsoft_Extensions_Configuration_IConfiguration_System_String_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>
 The file is created if needed. The contents of the file are overwritten 
 without warning. The contents of the configuration object are not 
 distributed between environments.
 </p>
 </div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>This exception is thrown whenever
-one or more arguments is missing or invalid.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           

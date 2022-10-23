@@ -19,11 +19,11 @@ references:
   commentId: M:CG.Configuration.ConfigurationException.#ctor
   fullName: CG.Configuration.ConfigurationException.ConfigurationException()
   nameWithType: ConfigurationException.ConfigurationException()
-- uid: CG.Configuration.ConfigurationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: CG.Configuration.ConfigurationException.#ctor(SerializationInfo,StreamingContext)
   name: ConfigurationException(SerializationInfo, StreamingContext)
-  href: api/CG.Configuration.ConfigurationException.html#CG_Configuration_ConfigurationException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
-  commentId: M:CG.Configuration.ConfigurationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  fullName: CG.Configuration.ConfigurationException.ConfigurationException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  href: api/CG.Configuration.ConfigurationException.html#CG_Configuration_ConfigurationException__ctor_SerializationInfo_StreamingContext_
+  commentId: M:CG.Configuration.ConfigurationException.#ctor(SerializationInfo,StreamingContext)
+  fullName: CG.Configuration.ConfigurationException.ConfigurationException(SerializationInfo, StreamingContext)
   nameWithType: ConfigurationException.ConfigurationException(SerializationInfo, StreamingContext)
 - uid: CG.Configuration.ConfigurationException.#ctor(System.String)
   name: ConfigurationException(String)
@@ -31,11 +31,11 @@ references:
   commentId: M:CG.Configuration.ConfigurationException.#ctor(System.String)
   fullName: CG.Configuration.ConfigurationException.ConfigurationException(System.String)
   nameWithType: ConfigurationException.ConfigurationException(String)
-- uid: CG.Configuration.ConfigurationException.#ctor(System.String,System.Exception)
+- uid: CG.Configuration.ConfigurationException.#ctor(System.String,Exception)
   name: ConfigurationException(String, Exception)
-  href: api/CG.Configuration.ConfigurationException.html#CG_Configuration_ConfigurationException__ctor_System_String_System_Exception_
-  commentId: M:CG.Configuration.ConfigurationException.#ctor(System.String,System.Exception)
-  fullName: CG.Configuration.ConfigurationException.ConfigurationException(System.String, System.Exception)
+  href: api/CG.Configuration.ConfigurationException.html#CG_Configuration_ConfigurationException__ctor_System_String_Exception_
+  commentId: M:CG.Configuration.ConfigurationException.#ctor(System.String,Exception)
+  fullName: CG.Configuration.ConfigurationException.ConfigurationException(System.String, Exception)
   nameWithType: ConfigurationException.ConfigurationException(String, Exception)
 - uid: CG.Configuration.ConfigurationException.#ctor*
   name: ConfigurationException
@@ -143,11 +143,11 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsByte
   nameWithType: ConfigurationExtensions.GetAsByte
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTime)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTime)
   name: GetAsDateTime(IConfiguration, String, DateTime)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsDateTime_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTime_
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTime)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.DateTime)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsDateTime_Microsoft_Extensions_Configuration_IConfiguration_System_String_DateTime_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTime)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, System.String, DateTime)
   nameWithType: ConfigurationExtensions.GetAsDateTime(IConfiguration, String, DateTime)
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTime*
   name: GetAsDateTime
@@ -156,11 +156,11 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTime
   nameWithType: ConfigurationExtensions.GetAsDateTime
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTimeOffset)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTimeOffset)
   name: GetAsDateTimeOffset(IConfiguration, String, DateTimeOffset)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsDateTimeOffset_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTimeOffset_
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTimeOffset)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.DateTimeOffset)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsDateTimeOffset_Microsoft_Extensions_Configuration_IConfiguration_System_String_DateTimeOffset_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTimeOffset)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, System.String, DateTimeOffset)
   nameWithType: ConfigurationExtensions.GetAsDateTimeOffset(IConfiguration, String, DateTimeOffset)
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDateTimeOffset*
   name: GetAsDateTimeOffset
@@ -182,11 +182,11 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsDecimal
   nameWithType: ConfigurationExtensions.GetAsDecimal
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Guid)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,Guid)
   name: GetAsGuid(IConfiguration, String, Guid)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsGuid_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Guid_
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Guid)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.Guid)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsGuid_Microsoft_Extensions_Configuration_IConfiguration_System_String_Guid_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,Guid)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, System.String, Guid)
   nameWithType: ConfigurationExtensions.GetAsGuid(IConfiguration, String, Guid)
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsGuid*
   name: GetAsGuid
@@ -221,11 +221,11 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsLong
   nameWithType: ConfigurationExtensions.GetAsLong
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,TimeSpan)
   name: GetAsTimeSpan(IConfiguration, String, TimeSpan)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_TimeSpan_
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.TimeSpan)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_GetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_TimeSpan_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,TimeSpan)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, System.String, TimeSpan)
   nameWithType: ConfigurationExtensions.GetAsTimeSpan(IConfiguration, String, TimeSpan)
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.GetAsTimeSpan*
   name: GetAsTimeSpan
@@ -332,13 +332,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy
   nameWithType: ConfigurationExtensions.SafeCopy
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy``2(Microsoft.Extensions.Configuration.IConfiguration,``0,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Boolean)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy``2(Microsoft.Extensions.Configuration.IConfiguration,``0,Expression{Func{``0,``1}},System.String,System.Boolean)
   name: SafeCopy<TObj, TProp>(IConfiguration, TObj, Expression<Func<TObj, TProp>>, String, Boolean)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_SafeCopy__2_Microsoft_Extensions_Configuration_IConfiguration___0_System_Linq_Expressions_Expression_System_Func___0___1___System_String_System_Boolean_
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy``2(Microsoft.Extensions.Configuration.IConfiguration,``0,System.Linq.Expressions.Expression{System.Func{``0,``1}},System.String,System.Boolean)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_SafeCopy__2_Microsoft_Extensions_Configuration_IConfiguration___0_Expression_Func___0___1___System_String_System_Boolean_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy``2(Microsoft.Extensions.Configuration.IConfiguration,``0,Expression{Func{``0,``1}},System.String,System.Boolean)
   name.vb: SafeCopy(Of TObj, TProp)(IConfiguration, TObj, Expression(Of Func(Of TObj, TProp)), String, Boolean)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy<TObj, TProp>(Microsoft.Extensions.Configuration.IConfiguration, TObj, System.Linq.Expressions.Expression<System.Func<TObj, TProp>>, System.String, System.Boolean)
-  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy(Of TObj, TProp)(Microsoft.Extensions.Configuration.IConfiguration, TObj, System.Linq.Expressions.Expression(Of System.Func(Of TObj, TProp)), System.String, System.Boolean)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy<TObj, TProp>(Microsoft.Extensions.Configuration.IConfiguration, TObj, Expression<Func<TObj, TProp>>, System.String, System.Boolean)
+  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.SafeCopy(Of TObj, TProp)(Microsoft.Extensions.Configuration.IConfiguration, TObj, Expression(Of Func(Of TObj, TProp)), System.String, System.Boolean)
   nameWithType: ConfigurationExtensions.SafeCopy<TObj, TProp>(IConfiguration, TObj, Expression<Func<TObj, TProp>>, String, Boolean)
   nameWithType.vb: ConfigurationExtensions.SafeCopy(Of TObj, TProp)(IConfiguration, TObj, Expression(Of Func(Of TObj, TProp)), String, Boolean)
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.ToJson(Microsoft.Extensions.Configuration.IConfiguration,System.Int32)
@@ -418,13 +418,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsChar
   nameWithType: ConfigurationExtensions.TryGetAsChar
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTime@)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTime@)
   name: TryGetAsDateTime(IConfiguration, String, out DateTime)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDateTime_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTime__
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTime@)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDateTime_Microsoft_Extensions_Configuration_IConfiguration_System_String_DateTime__
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTime@)
   name.vb: TryGetAsDateTime(IConfiguration, String, ByRef DateTime)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.DateTime)
-  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.DateTime)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, System.String, out DateTime)
+  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef DateTime)
   nameWithType: ConfigurationExtensions.TryGetAsDateTime(IConfiguration, String, out DateTime)
   nameWithType.vb: ConfigurationExtensions.TryGetAsDateTime(IConfiguration, String, ByRef DateTime)
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime*
@@ -434,13 +434,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTime
   nameWithType: ConfigurationExtensions.TryGetAsDateTime
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTimeOffset@)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTimeOffset@)
   name: TryGetAsDateTimeOffset(IConfiguration, String, out DateTimeOffset)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDateTimeOffset_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_DateTimeOffset__
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.DateTimeOffset@)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsDateTimeOffset_Microsoft_Extensions_Configuration_IConfiguration_System_String_DateTimeOffset__
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration,System.String,DateTimeOffset@)
   name.vb: TryGetAsDateTimeOffset(IConfiguration, String, ByRef DateTimeOffset)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.DateTimeOffset)
-  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.DateTimeOffset)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, System.String, out DateTimeOffset)
+  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef DateTimeOffset)
   nameWithType: ConfigurationExtensions.TryGetAsDateTimeOffset(IConfiguration, String, out DateTimeOffset)
   nameWithType.vb: ConfigurationExtensions.TryGetAsDateTimeOffset(IConfiguration, String, ByRef DateTimeOffset)
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsDateTimeOffset*
@@ -498,13 +498,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsFloat
   nameWithType: ConfigurationExtensions.TryGetAsFloat
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Guid@)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,Guid@)
   name: TryGetAsGuid(IConfiguration, String, out Guid)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsGuid_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Guid__
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Guid@)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsGuid_Microsoft_Extensions_Configuration_IConfiguration_System_String_Guid__
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration,System.String,Guid@)
   name.vb: TryGetAsGuid(IConfiguration, String, ByRef Guid)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Guid)
-  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Guid)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, System.String, out Guid)
+  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef Guid)
   nameWithType: ConfigurationExtensions.TryGetAsGuid(IConfiguration, String, out Guid)
   nameWithType.vb: ConfigurationExtensions.TryGetAsGuid(IConfiguration, String, ByRef Guid)
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsGuid*
@@ -537,13 +537,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList
   nameWithType: ConfigurationExtensions.TryGetAsList
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Collections.Generic.IEnumerable{``0}@)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,IEnumerable{``0}@)
   name: TryGetAsList<T>(IConfiguration, String, out IEnumerable<T>)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsList__1_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Collections_Generic_IEnumerable___0___
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Collections.Generic.IEnumerable{``0}@)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsList__1_Microsoft_Extensions_Configuration_IConfiguration_System_String_IEnumerable___0___
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,IEnumerable{``0}@)
   name.vb: TryGetAsList(Of T)(IConfiguration, String, ByRef IEnumerable(Of T))
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList<T>(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList(Of T)(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.Collections.Generic.IEnumerable(Of T))
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList<T>(Microsoft.Extensions.Configuration.IConfiguration, System.String, out IEnumerable<T>)
+  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsList(Of T)(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef IEnumerable(Of T))
   nameWithType: ConfigurationExtensions.TryGetAsList<T>(IConfiguration, String, out IEnumerable<T>)
   nameWithType.vb: ConfigurationExtensions.TryGetAsList(Of T)(IConfiguration, String, ByRef IEnumerable(Of T))
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsLong(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Int64@)
@@ -562,13 +562,13 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsLong
   nameWithType: ConfigurationExtensions.TryGetAsLong
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan@)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,TimeSpan@)
   name: TryGetAsTimeSpan(IConfiguration, String, out TimeSpan)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_TimeSpan__
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.TimeSpan@)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_TryGetAsTimeSpan_Microsoft_Extensions_Configuration_IConfiguration_System_String_TimeSpan__
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration,System.String,TimeSpan@)
   name.vb: TryGetAsTimeSpan(IConfiguration, String, ByRef TimeSpan)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, System.String, out System.TimeSpan)
-  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef System.TimeSpan)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, System.String, out TimeSpan)
+  fullName.vb: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, System.String, ByRef TimeSpan)
   nameWithType: ConfigurationExtensions.TryGetAsTimeSpan(IConfiguration, String, out TimeSpan)
   nameWithType.vb: ConfigurationExtensions.TryGetAsTimeSpan(IConfiguration, String, ByRef TimeSpan)
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.TryGetAsTimeSpan*
@@ -623,11 +623,11 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSON
   nameWithType: ConfigurationExtensions.WriteAsJSON
-- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Threading.CancellationToken)
+- uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration,System.String,CancellationToken)
   name: WriteAsJSONAsync(IConfiguration, String, CancellationToken)
-  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_Threading_CancellationToken_
-  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.Threading.CancellationToken)
-  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration, System.String, System.Threading.CancellationToken)
+  href: api/Microsoft.Extensions.Configuration.ConfigurationExtensions.html#Microsoft_Extensions_Configuration_ConfigurationExtensions_WriteAsJSONAsync_Microsoft_Extensions_Configuration_IConfiguration_System_String_CancellationToken_
+  commentId: M:Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration,System.String,CancellationToken)
+  fullName: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync(Microsoft.Extensions.Configuration.IConfiguration, System.String, CancellationToken)
   nameWithType: ConfigurationExtensions.WriteAsJSONAsync(IConfiguration, String, CancellationToken)
 - uid: Microsoft.Extensions.Configuration.ConfigurationExtensions.WriteAsJSONAsync*
   name: WriteAsJSONAsync
