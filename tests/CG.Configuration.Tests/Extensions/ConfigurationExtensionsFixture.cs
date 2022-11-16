@@ -88,7 +88,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.SafeCopy{TObj, TProp}(Microsoft.Extensions.Configuration.IConfiguration, TObj, System.Linq.Expressions.Expression{Func{TObj, TProp}}, string, bool)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.SafeCopy{TObj, TProp}(IConfiguration, TObj, System.Linq.Expressions.Expression{Func{TObj, TProp}}, string, bool)"/>
         /// method safely copies a value from a location in the configuration to
         /// a location in a class, as specified by the delegate and the key
         /// used in the operation.
@@ -109,7 +109,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.SafeCopy{TObj, TProp}(Microsoft.Extensions.Configuration.IConfiguration, TObj, System.Linq.Expressions.Expression{Func{TObj, TProp}}, string, bool)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.SafeCopy{TObj, TProp}(IConfiguration, TObj, System.Linq.Expressions.Expression{Func{TObj, TProp}}, string, bool)"/>
         /// method fails to copy a value when the source is missing, or null.
         /// </summary>
         [TestMethod]
@@ -131,7 +131,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsList{T}(Microsoft.Extensions.Configuration.IConfiguration, string, out System.Collections.Generic.IEnumerable{T})"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsList{T}(IConfiguration, string, out IEnumerable{T})"/>
         /// method copies a list of values from the configuration as specified 
         /// by the key used in the operation.
         /// </summary>
@@ -154,7 +154,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAs{T}(Microsoft.Extensions.Configuration.IConfiguration, string, out T)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAs{T}(IConfiguration, string, out T)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -174,7 +174,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAs{T}(Microsoft.Extensions.Configuration.IConfiguration, string, T)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAs{T}(IConfiguration, string, T)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -193,7 +193,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAs{T}(Microsoft.Extensions.Configuration.IConfiguration, string, T)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAs{T}(IConfiguration, string, T)"/>
         /// method returns the default value when the key is missing or can't
         /// be parsed, or converted to the target type.
         /// </summary>
@@ -212,7 +212,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration, string, out bool)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsBoolean(IConfiguration, string, out bool)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -232,7 +232,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsByte(Microsoft.Extensions.Configuration.IConfiguration, string, out byte)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsByte(IConfiguration, string, out byte)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -252,7 +252,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsChar(Microsoft.Extensions.Configuration.IConfiguration, string, out char)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsChar(IConfiguration, string, out char)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -272,7 +272,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, string, out DateTime)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsDateTime(IConfiguration, string, out DateTime)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -292,7 +292,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, string, out DateTimeOffset)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsDateTimeOffset(IConfiguration, string, out DateTimeOffset)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -312,7 +312,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsDecimal(Microsoft.Extensions.Configuration.IConfiguration, string, out decimal)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsDecimal(IConfiguration, string, out decimal)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -332,7 +332,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsDouble(Microsoft.Extensions.Configuration.IConfiguration, string, out double)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsDouble(IConfiguration, string, out double)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -352,7 +352,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsFloat(Microsoft.Extensions.Configuration.IConfiguration, string, out float)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsFloat(IConfiguration, string, out float)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -372,7 +372,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, string, out Guid)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsGuid(IConfiguration, string, out Guid)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -392,7 +392,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsInt(Microsoft.Extensions.Configuration.IConfiguration, string, out int)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsInt(IConfiguration, string, out int)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -412,7 +412,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsLong(Microsoft.Extensions.Configuration.IConfiguration, string, out long)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsLong(IConfiguration, string, out long)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -432,7 +432,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, string, out TimeSpan)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsTimeSpan(IConfiguration, string, out TimeSpan)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -452,7 +452,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsUInt(Microsoft.Extensions.Configuration.IConfiguration, string, out uint)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsUInt(IConfiguration, string, out uint)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -472,7 +472,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsULong(Microsoft.Extensions.Configuration.IConfiguration, string, out ulong)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.TryGetAsULong(IConfiguration, string, out ulong)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -492,7 +492,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration, string, bool)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsBoolean(IConfiguration, string, bool)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -511,7 +511,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsBoolean(Microsoft.Extensions.Configuration.IConfiguration, string, bool)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsBoolean(IConfiguration, string, bool)"/>
         /// method copies a default value if the key is missing, or can't be 
         /// parsed, or can't be converted to the desired type.
         /// </summary>
@@ -530,7 +530,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsByte(Microsoft.Extensions.Configuration.IConfiguration, string, byte)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsByte(IConfiguration, string, byte)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -549,7 +549,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsByte(Microsoft.Extensions.Configuration.IConfiguration, string, byte)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsByte(IConfiguration, string, byte)"/>
         /// method copies a default value if the key is missing, or can't be 
         /// parsed, or can't be converted to the desired type.
         /// </summary>
@@ -568,7 +568,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, string, DateTime)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDateTime(IConfiguration, string, DateTime)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -587,7 +587,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDateTime(Microsoft.Extensions.Configuration.IConfiguration, string, DateTime)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDateTime(IConfiguration, string, DateTime)"/>
         /// method copies a default value if the key is missing, or can't be 
         /// parsed, or can't be converted to the desired type.
         /// </summary>
@@ -606,7 +606,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, string, DateTimeOffset)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDateTimeOffset(IConfiguration, string, DateTimeOffset)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -625,7 +625,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDateTimeOffset(Microsoft.Extensions.Configuration.IConfiguration, string, DateTimeOffset)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDateTimeOffset(IConfiguration, string, DateTimeOffset)"/>
         /// method copies a default value if the key is missing, or can't be 
         /// parsed, or can't be converted to the desired type.
         /// </summary>
@@ -644,7 +644,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDecimal(Microsoft.Extensions.Configuration.IConfiguration, string, decimal)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDecimal(IConfiguration, string, decimal)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -663,7 +663,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDecimal(Microsoft.Extensions.Configuration.IConfiguration, string, decimal)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsDecimal(IConfiguration, string, decimal)"/>
         /// method copies a default value if the key is missing, or can't be 
         /// parsed, or can't be converted to the desired type.
         /// </summary>
@@ -682,7 +682,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, string, Guid)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsGuid(IConfiguration, string, Guid)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -701,7 +701,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsGuid(Microsoft.Extensions.Configuration.IConfiguration, string, Guid)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsGuid(IConfiguration, string, Guid)"/>
         /// method copies a default value if the key is missing, or can't be 
         /// parsed, or can't be converted to the desired type.
         /// </summary>
@@ -720,7 +720,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsInt(Microsoft.Extensions.Configuration.IConfiguration, string, int)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsInt(IConfiguration, string, int)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -739,7 +739,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsInt(Microsoft.Extensions.Configuration.IConfiguration, string, int)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsInt(IConfiguration, string, int)"/>
         /// method copies a default value if the key is missing, or can't be 
         /// parsed, or can't be converted to the desired type.
         /// </summary>
@@ -758,7 +758,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsLong(Microsoft.Extensions.Configuration.IConfiguration, string, long)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsLong(IConfiguration, string, long)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -777,7 +777,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsLong(Microsoft.Extensions.Configuration.IConfiguration, string, long)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsLong(IConfiguration, string, long)"/>
         /// method copies a default value if the key is missing, or can't be 
         /// parsed, or can't be converted to the desired type.
         /// </summary>
@@ -796,7 +796,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, string, TimeSpan)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsTimeSpan(IConfiguration, string, TimeSpan)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -815,7 +815,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsTimeSpan(Microsoft.Extensions.Configuration.IConfiguration, string, TimeSpan)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsTimeSpan(IConfiguration, string, TimeSpan)"/>
         /// method copies a default value if the key is missing, or can't be 
         /// parsed, or can't be converted to the desired type.
         /// </summary>
@@ -834,7 +834,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsUInt(Microsoft.Extensions.Configuration.IConfiguration, string, uint)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsUInt(IConfiguration, string, uint)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -853,7 +853,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsUInt(Microsoft.Extensions.Configuration.IConfiguration, string, uint)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsUInt(IConfiguration, string, uint)"/>
         /// method copies a default value if the key is missing, or can't be 
         /// parsed, or can't be converted to the desired type.
         /// </summary>
@@ -872,7 +872,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsULong(Microsoft.Extensions.Configuration.IConfiguration, string, ulong)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsULong(IConfiguration, string, ulong)"/>
         /// method copies a value from the configuration as specified by the key 
         /// used in the operation.
         /// </summary>
@@ -891,7 +891,7 @@ namespace CG.Configuration
         // *******************************************************************
 
         /// <summary>
-        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsULong(Microsoft.Extensions.Configuration.IConfiguration, string, ulong)"/>
+        /// This method verifies that the <see cref="ConfigurationExtensions.GetAsULong(IConfiguration, string, ulong)"/>
         /// method copies a default value if the key is missing, or can't be 
         /// parsed, or can't be converted to the desired type.
         /// </summary>
